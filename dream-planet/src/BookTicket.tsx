@@ -2,7 +2,6 @@ import { useState } from "react";
 import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import Button from "@material-ui/core/Button";
-import { purple } from "@material-ui/core/colors";
 
 const BookTicket = (): JSX.Element => {
 	const [message, setMessage] = useState<string>("");
@@ -15,8 +14,7 @@ const BookTicket = (): JSX.Element => {
 				textAlign: "center",
 				display: "flex",
 				flexDirection: "column",
-				width: "50vw",
-				maxWidth: "425px",
+				width: "425px",
 				backgroundColor: "white",
 				borderRadius: 5,
 			}}
@@ -69,7 +67,8 @@ const BookTicket = (): JSX.Element => {
 						setMessage("Please enter a valid fullname!")
 					else if ((document.querySelector("#emailAddressInput") as HTMLInputElement)?.value.trim() === "")
 						setMessage("Please enter a valid email address!")
-					else if ((document.querySelector("#noOfTicketsInput") as HTMLInputElement)?.value.trim() === "")
+					else if ((document.querySelector("#noOfTicketsInput") as HTMLInputElement)?.value.trim() === ""
+						|| Number((document.querySelector("#noOfTicketsInput") as HTMLInputElement)?.value) <= 0)
 						setMessage("Please enter a valid number of tickets!")
 					else
 						setMessage("An invoice has been mailed to you! Thanks for your order!")
@@ -91,7 +90,7 @@ const BookTicket = (): JSX.Element => {
 			}
 
 
-		</form>
+		</form >
 	)
 
 }
