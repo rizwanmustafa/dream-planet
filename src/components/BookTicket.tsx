@@ -27,7 +27,7 @@ const BookTicket = (): JSX.Element => {
 				<b>Book a ticket to Moriz now!</b>
 			</Typography>
 
-			<Typography color="secondary" style={{ paddingBottom: 50 }}>Price: 1 Million Rupees</Typography>
+			<Typography color="secondary" style={{ paddingBottom: 50 }}>1 Ticket Price is  $1,250,000</Typography>
 
 			<TextField
 				label="Full Name"
