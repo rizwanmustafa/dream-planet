@@ -1,20 +1,22 @@
 {
   "files": {
     "main.css": "/dream-planet/static/css/main.c5048a84.chunk.css",
-    "main.js": "/dream-planet/static/js/main.1654a683.chunk.js",
-    "main.js.map": "/dream-planet/static/js/main.1654a683.chunk.js.map",
+    "main.js": "/dream-planet/static/js/main.1a011e75.chunk.js",
+    "main.js.map": "/dream-planet/static/js/main.1a011e75.chunk.js.map",
     "runtime-main.js": "/dream-planet/static/js/runtime-main.a5afa9d9.js",
     "runtime-main.js.map": "/dream-planet/static/js/runtime-main.a5afa9d9.js.map",
-    "static/js/2.495c367e.chunk.js": "/dream-planet/static/js/2.495c367e.chunk.js",
-    "static/js/2.495c367e.chunk.js.map": "/dream-planet/static/js/2.495c367e.chunk.js.map",
+    "static/js/2.16830c09.chunk.js": "/dream-planet/static/js/2.16830c09.chunk.js",
+    "static/js/2.16830c09.chunk.js.map": "/dream-planet/static/js/2.16830c09.chunk.js.map",
     "index.html": "/dream-planet/index.html",
     "static/css/main.c5048a84.chunk.css.map": "/dream-planet/static/css/main.c5048a84.chunk.css.map",
-    "static/js/2.495c367e.chunk.js.LICENSE.txt": "/dream-planet/static/js/2.495c367e.chunk.js.LICENSE.txt"
+    "static/js/2.16830c09.chunk.js.LICENSE.txt": "/dream-planet/static/js/2.16830c09.chunk.js.LICENSE.txt",
+    "static/media/check.680f9d8a.jpeg": "/dream-planet/static/media/check.680f9d8a.jpeg",
+    "static/media/planet-image-new.b18a436e.png": "/dream-planet/static/media/planet-image-new.b18a436e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a5afa9d9.js",
-    "static/js/2.495c367e.chunk.js",
+    "static/js/2.16830c09.chunk.js",
     "static/css/main.c5048a84.chunk.css",
-    "static/js/main.1654a683.chunk.js"
+    "static/js/main.1a011e75.chunk.js"
   ]
 }
