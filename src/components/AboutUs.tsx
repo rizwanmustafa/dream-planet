@@ -2,11 +2,22 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import { useHistory } from "react-router-dom";
 
+import checkBG from "../images/about-us-bg.jpeg";
+
 const AboutUs = (): JSX.Element => {
 	const history = useHistory();
 
 	return (
-		<div style={{ backgroundColor: "black", color: "white", display: "flex", flexDirection: "column", alignItems: "center" }}>
+		<div style={{
+			backgroundColor: "black",
+			color: "white",
+			display: "flex",
+			flexDirection: "column",
+			alignItems: "center",
+			backgroundImage: `url(${checkBG})`,
+			backgroundRepeat: "no-repeat",
+			backgroundPosition: "center"
+		}}>
 
 			<Typography
 				component="h1"
