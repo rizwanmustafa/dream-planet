@@ -11,8 +11,8 @@ const SpecieDescription = (props: Props): JSX.Element => {
 	return (
 		<div style={{
 			display: "flex",
-			margin: "30px 0px",
 			justifyContent: "space-between",
+			marginBottom:10,
 			backgroundColor: "white",
 			borderRadius: 10,
 			width: "60%",
