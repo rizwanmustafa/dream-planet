@@ -3,7 +3,7 @@ const IntroComponent2 = () => {
 
 	const parentDivStyles = {
 		display: "flex",
-		width: "100vw",
+		alignSelf: "center"
 	}
 
 	const textDivStyles = {
@@ -26,7 +26,7 @@ const IntroComponent2 = () => {
 						lineHeight: "35px",
 						fontSize: "20px",
 						paddingRight: "100px",
-						textAlign:"justify",
+						textAlign: "justify",
 					}
 				}>
 					Moriz was actually part of a galaxy N-12794 but was sent propelling into our Milkyway by a great explosion caused by a supernova millions of miles away from Moriz.
@@ -36,7 +36,7 @@ const IntroComponent2 = () => {
 			</div>
 
 			<div>
-				<img src={planetLogo} style={imageStyles} />
+				<img src={planetLogo} style={imageStyles} alt="Planet Moriz" />
 			</div>
 		</div>
 	)

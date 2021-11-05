@@ -34,7 +34,7 @@ const SpecieDescription = (props: Props): JSX.Element => {
 
 				<img
 					src={props.photo}
-					alt={`Image of ${props.name}`}
+					alt={`${props.name}`}
 					style={{
 						width: "100%",
 						height: "100%",
