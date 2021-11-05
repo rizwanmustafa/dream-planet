@@ -17,6 +17,7 @@ import SpecieDescription from "./components/SpecieDescription";
 
 // Specie images
 import electrarTree from "./images/ElectrarTree.png";
+import ramosar from "./images/ramosar.png"
 
 
 const App = () => {
@@ -48,7 +49,7 @@ const App = () => {
 					variant="h2"
 					component="h1"
 					color="secondary"
-					style={{ textAlign: "center", paddingTop:20 }}
+					style={{ textAlign: "center", margin: "30px 0" }}
 				><b>Native Species of Moriz</b></Typography>
 
 				<SpecieDescription
@@ -71,13 +72,17 @@ const App = () => {
 				/>
 
 				<SpecieDescription
-					name="Bonsar Trees"
-					type="Plant"
-					description="Bonsar trees may look similar to bonsai trees present on Earth but do not underestimate them.
-					They are one of the native species that survived supernova explosion.
-					They absorb carbon dioxide and release oxygen 20 times faster than plants on Earth.
-					They can also produce all fruits and vegetables available on Earth, all year round no matter what the season."
-					photo={checkImage}
+					name="Ramosar"
+					type="Animal"
+					description="Seems like alien movies were right after all. 
+					Ramosar is an alien spcies that unfortunately did not survive the supernova explosion.
+					However, there is no need to panic.
+					Ramosar may look frightening but scientists have discovered that they are way weaker than humans, physically and mentally.
+					Scientists have also deduced that while the explosion took place, Ramosars were actually fighting each other which indicates the possibility of a civil war."
+					attribution={
+						<>Image by <a href='https://pixabay.com/users/anaterate-2348028/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3317701'>Wolfgang Eckert</a> from <a href='https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3317701'>Pixabay</a></>
+					}
+					photo={ramosar}
 				/>
 			</Route>
 
