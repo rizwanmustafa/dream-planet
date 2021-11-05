@@ -3,17 +3,19 @@ import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import Button from "@material-ui/core/Button";
 
+
 const BookTicket = (): JSX.Element => {
 	const [message, setMessage] = useState<string>("");
 
 	return (
 		<form
 			style={{
+				display: "flex",
+				flexDirection: "column",
+				alignSelf: "center",
 				margin: 20,
 				padding: 30,
 				textAlign: "center",
-				display: "flex",
-				flexDirection: "column",
 				width: "425px",
 				backgroundColor: "white",
 				borderRadius: 5,

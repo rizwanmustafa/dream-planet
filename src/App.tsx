@@ -9,6 +9,7 @@ import { Switch, Route } from "react-router-dom";
 
 import "./styles/styles.css";
 import checkImage from "./images/check.jpeg";
+import rizwanImage from "./images/rizwan.jpg";
 import CopyrightStrip from "./components/CopyrightStrip";
 
 const App = () => {
@@ -25,7 +26,7 @@ const App = () => {
 						},
 						{
 							founderName: "Rizwan Mustafa",
-							founderImage: checkImage,
+							founderImage: rizwanImage,
 						}
 					]}
 				/>

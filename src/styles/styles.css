@@ -7,3 +7,10 @@ body {
   font-family: "Helvetica", "Roboto", sans-serif;
   background-color: lightgray;
 }
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

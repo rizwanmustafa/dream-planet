@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 
 import checkBG from "../images/about-us-bg.jpeg";
 
+
 const AboutUs = (): JSX.Element => {
 	const history = useHistory();
 
