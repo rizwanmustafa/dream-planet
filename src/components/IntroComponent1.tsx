@@ -1,4 +1,4 @@
-import planetImage from "../images/planet-image.png";
+import planetImage from "../images/planet-image-new.png";
 const IntroComponent1 = (): JSX.Element => {
 
 	return (
