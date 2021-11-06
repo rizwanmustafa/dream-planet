@@ -16,7 +16,7 @@ const ParagraphWithHeading = (props: Props): JSX.Element => {
 			width: "75vw",
 		}}>
 			<Typography color="secondary" component="h3" variant="h4" >{props.heading}</Typography>
-			<Typography component="p" style={{ paddingTop: 10 }}>{props.body}</Typography>
+			<Typography component="p" style={{ paddingTop: 10, fontSize: 18, lineHeight: "30px" }}>{props.body}</Typography>
 		</div>
 	);
 };

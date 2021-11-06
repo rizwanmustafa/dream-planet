@@ -54,14 +54,14 @@ const IntroComponent2 = () => {
 					color="secondary"
 					variant="contained"
 					style={{ padding: "10px 20px", margin: "40px 10px", }}
-					onClick={() => history.push("/discovery_and_features")}
+					onClick={() => { history.push("/discovery_and_features"); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
 				>Read about its Discovery and Features</Button>
 
 				<Button
 					color="secondary"
 					variant="contained"
 					style={{ padding: "10px 20px", margin: "40px 10px", }}
-					onClick={() => history.push("/species")}
+					onClick={() => { history.push("/species"); window.scrollTo({ top: 0, behavior: 'smooth' }) }}
 				>
 					Read about Native Species
 				</Button>
