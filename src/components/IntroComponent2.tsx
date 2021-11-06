@@ -1,6 +1,10 @@
 import { useHistory } from "react-router-dom";
 import Button from "@material-ui/core/Button";
+import Typography from "@material-ui/core/Typography";
+
 import planetLogo from "../images/planet-image-new.png";
+import solarSystem from "../images/solar-system.png";
+
 
 const IntroComponent2 = () => {
 	const history = useHistory();
@@ -22,10 +26,10 @@ const IntroComponent2 = () => {
 	}
 
 	return (
-		<div style={{ display: "flex", flexDirection: "column", alignItems: "center", alignSelf: "center" }}>
+		<div style={{ display: "flex", flexDirection: "column", alignItems: "center", alignSelf: "center", margin: "50px 10px" }}>
 			<div style={parentDivStyles}>
 				<div style={textDivStyles}>
-					<h1 style={{ color: "#9c27b0", fontSize: "4rem", marginBottom: 10, }}>Moriz</h1>
+					<Typography variant="h2" component="h2" color="secondary" style={{ fontWeight: "bold" }}>Moriz</Typography>
 					<p style={
 						{
 							lineHeight: "35px",
@@ -35,7 +39,7 @@ const IntroComponent2 = () => {
 						}
 					}>
 						Moriz was actually part of a galaxy N-12794 but was sent propelling into our Milkyway by a great explosion caused by a supernova millions of miles away from Moriz.
-						Luckily, Moriz was able to withstand the explosion and is now orbiting Sun and is located between Mars' and Earth's orbit.
+						Luckily, Moriz was able to withstand the explosion and is now orbiting Sun and is located between Venus' and Earth's orbit.
 						The best part about all of this is the fact that this magical planet can sustain life and it is even better at it than Earth.
 					</p>
 				</div>
@@ -50,17 +54,31 @@ const IntroComponent2 = () => {
 					color="secondary"
 					variant="contained"
 					style={{ padding: "10px 20px", margin: "40px 10px", }}
-					onClick={() => history.push("/species")}
-				>
-					Read about Species
-				</Button>
+					onClick={() => history.push("/discovery_and_features")}
+				>Read about its Discovery and Features</Button>
 
 				<Button
 					color="secondary"
 					variant="contained"
 					style={{ padding: "10px 20px", margin: "40px 10px", }}
-					onClick={() => history.push("/discovery_and_features")}
-				>Read about Discoveries and Features</Button>
+					onClick={() => history.push("/species")}
+				>
+					Read about Native Species
+				</Button>
+
+			</div>
+
+			<div style={{ display: "flex", alignItems: "center", flexDirection: "column", maxWidth: 1220 }}>
+				<Typography
+					color="secondary"
+					component="h2"
+					variant="h2"
+					style={{ fontWeight: "bold", margin: "50px 10px" }}
+				>
+					Moriz's Position in the Solar System
+				</Typography>
+
+				<img src={solarSystem} alt="Solar System" style={{ width: "100%", borderRadius: 10 }} />
 			</div>
 		</div>
 	)
