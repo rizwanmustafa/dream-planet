@@ -88,16 +88,55 @@ const App = () => {
 			</Route>
 
 			<Route path="/discovery_and_features" exact>
-				<Typography
-					variant="h2"
-					component="h1"
-					color="secondary"
-					style={{ textAlign: "center", margin: "30px 0", fontWeight: "bold" }}
-				>Fabulous Features of Moriz</Typography>
+				<div style={{
+					alignSelf: "center",
+					display: "flex",
+					flexDirection: "column",
+					backgroundColor: "white",
+					marginTop: 30,
+					padding: 30,
+					width: "75vw",
+					borderRadius: 10,
+				}}>
+					<Typography
+						variant="h2"
+						component="h1"
+						color="secondary"
+						style={{ textAlign: "center", marginBottom: 30, fontWeight: "bold" }}
+					>Discovery of Moriz</Typography>
 
-				<ParagraphWithHeading
-					heading="Some scientific facts!"	
-					body="It is the only discovered planet other than Earth that is suitable for life.
+					<Typography
+						style={{
+							alignSelf: "center",
+							textAlign: "justify",
+						}}>
+						asdl;fkjl
+					</Typography>
+				</div>
+
+				<div style={{
+					display: "flex",
+					alignSelf: "center",
+					alignItems: "center",
+					flexDirection: "column",
+					backgroundColor: "white",
+					width: "75vw",
+					
+					margin: "50px 10px",
+					padding: 30,
+					borderRadius: 10,
+
+				}}>
+					<Typography
+						variant="h2"
+						component="h1"
+						color="secondary"
+						style={{ textAlign: "center", margin: "30px 0", fontWeight: "bold" }}
+					>Fabulous Features of Moriz</Typography>
+
+					<ParagraphWithHeading
+						heading="Some scientific facts!"
+						body="It is the only discovered planet other than Earth that is suitable for life.
 					It is completely covered by land and water is only found deep undergeround.
 					It's atmospheric composition is extremely similar to Earth except one exception: It contains a new gas called 'Rizmo'.
 					Moriz takes 275 days to complete its orbit.
@@ -105,33 +144,34 @@ const App = () => {
 					Summer stays for 9 months while winter stays only for 3 months.
 					Average temperature at Moriz is 16 celsius.
 					Scientists estimate that about 75% of the human population will have shifted to Moriz by 2053."
-				/>
+					/>
 
-				<ParagraphWithHeading
-					heading="A magical gas 'Rizmo'"
-					body="A magical gas Rizmo has been discovered on the Planet Moriz. 
+					<ParagraphWithHeading
+						heading="A magical gas 'Rizmo'"
+						body="A magical gas Rizmo has been discovered on the Planet Moriz. 
 					It constitutes for 2% of Planet Moriz's atmosphere and its magical properties may leave you surprised just like the scientists who discovered it. 
 					This gas kills harmful microbes including bacteria and viruses upon coming in contact with them. 
 					Scientists are still figuring out how the magical Rizmo does this but it is absolutely stunning. 
 					This gas will allow humans to live on Planet Moriz without getting infected by diseases or pandemics. 
 					This magical gas is also the reason behind the iconic purple colour of the planet."
-				/>
+					/>
 
-				<ParagraphWithHeading
-					heading="Mostly covered by Trees"
-					body="The surface of Planet Moriz is mostly covered by the trees of Bonsar and Electrar. 
+					<ParagraphWithHeading
+						heading="Mostly covered by Trees"
+						body="The surface of Planet Moriz is mostly covered by the trees of Bonsar and Electrar. 
 					They can be found nearly everywhere. 
 					After analyzing, scientists have said that 50.1% of the Planet Moriz's surface is covered by Bonsar Trees and 30.3% is covered by the Electrar Trees.
 					Scientists are hoping to use the bonsar trees for extensive agriculture and satisfying the food requirements of the population on Earth.
 					Electrar Trees on the other hand will be used to generate and store electricity.
 					The electricity will then be provided to the future population and industries of Planet Moriz."
-				/>
+					/>
 
-				<ParagraphWithHeading
-					heading="Extremely fertile soil but..."
-					body="It has been discovered that the soil of Planet Moriz is extremely fertile and the reason for this is a newly discovered element 'Wanza'.
+					<ParagraphWithHeading
+						heading="Extremely fertile soil but..."
+						body="It has been discovered that the soil of Planet Moriz is extremely fertile and the reason for this is a newly discovered element 'Wanza'.
 					This mystical element speeds up the growing process of every plant by up to 20 times and allows them to grow in the soil of Planet Moriz irrespective of the seasons. This is an extremely good news as this will help in satisfying the feeding needs of the human population"
-				/>
+					/>
+				</div>
 			</Route>
 
 			<Route path="/" exact>
