@@ -4,7 +4,6 @@ import TextField from '@material-ui/core/TextField';
 import Button from "@material-ui/core/Button";
 
 import planetImage from "../images/planet-image-new.png";
-import { borderRadius, textAlign } from "@material-ui/system";
 
 
 const BookTicket = (): JSX.Element => {
@@ -34,10 +33,10 @@ const BookTicket = (): JSX.Element => {
 				}}
 
 			>
-				<img 
-				src={planetImage} 
-				alt="Planet Moriz" 
-				style={{width:"100%"}}
+				<img
+					src={planetImage}
+					alt="Planet Moriz"
+					style={{ width: "100%" }}
 				/>
 			</div>
 

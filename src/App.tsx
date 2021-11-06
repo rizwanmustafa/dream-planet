@@ -18,6 +18,7 @@ import SpecieDescription from "./components/SpecieDescription";
 // Specie images
 import electrarTree from "./images/ElectrarTree.png";
 import ramosar from "./images/ramosar.png"
+import ParagraphWithHeading from "./components/PargraphWithHeading";
 
 
 const App = () => {
@@ -49,8 +50,8 @@ const App = () => {
 					variant="h2"
 					component="h1"
 					color="secondary"
-					style={{ textAlign: "center", margin: "30px 0" }}
-				><b>Native Species of Moriz</b></Typography>
+					style={{ textAlign: "center", margin: "30px 0", fontWeight: "bold" }}
+				>Native Species of Moriz</Typography>
 
 				<SpecieDescription
 					name="Bonsar Trees"
@@ -86,7 +87,37 @@ const App = () => {
 				/>
 			</Route>
 
+			<Route path="/discovery_and_features" exact>
+				<Typography
+					variant="h2"
+					component="h1"
+					color="secondary"
+					style={{ textAlign: "center", margin: "30px 0", fontWeight: "bold" }}
+				>Fabulous Features of Moriz</Typography>
+
+				<ParagraphWithHeading
+					heading="A magical gas 'Rizmo'"
+					body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				/>
+
+				<ParagraphWithHeading
+					heading="Mostly covered by Bonsar Trees"
+					body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				/>
+
+				<ParagraphWithHeading
+					heading="Extremely fertile soil but..."
+					body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				/>
+
+				<ParagraphWithHeading
+					heading="No water bodies!"
+					body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				/>
+			</Route>
+
 			<Route path="/" exact>
+				<IntroComponent1 />
 				<IntroComponent2 />
 			</Route>
 

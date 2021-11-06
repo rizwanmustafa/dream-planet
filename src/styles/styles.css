@@ -14,3 +14,36 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+#menu {
+  z-index: 2;
+}
+
+/* Pure aesthetics! */
+/* For changing scroll bar color */
+* {
+  scrollbar-color: #620872 transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 10px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+body::-webkit-scrollbar-thumb {
+  background: #620872;
+  width: 10px;
+  height: 10px;
+}
+
+/* For changing default selection color */
+*::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #620872;
+}
+
+*::selection {
+  color: white;
+  background: #620872;
+}

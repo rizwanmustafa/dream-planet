@@ -10,9 +10,9 @@ interface Founder {
 }
 
 const FounderArray = (props: Props): JSX.Element => {
-	const founderElements = props.founders.map(founder => {
+	const founderElements = props.founders.map((founder, index) => {
 		return (
-			<div style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: 30, backgroundColor: "white", padding: 20, width: 250, borderRadius: 10 }}>
+			<div key={index} style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: 30, backgroundColor: "white", padding: 20, width: 250, borderRadius: 10 }}>
 				<img
 					src={founder.founderImage}
 					alt={`${founder.founderName}`}

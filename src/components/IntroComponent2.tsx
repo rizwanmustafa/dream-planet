@@ -38,6 +38,7 @@ const IntroComponent2 = () => {
 			<div>
 				<img src={planetLogo} style={imageStyles} alt="Planet Moriz" />
 			</div>
+
 		</div>
 	)
 
