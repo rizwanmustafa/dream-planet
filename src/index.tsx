@@ -10,6 +10,7 @@ ReactDOM.render(
 	<StrictMode>
 		<Router>
 			<MenuBar />
+			<div style={{paddingTop: 65, backgroundColor: "#9c27b0"}}></div>
 			<App />
 			<CopyrightStrip />
 		</Router>

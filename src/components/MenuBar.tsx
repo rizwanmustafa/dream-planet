@@ -67,7 +67,10 @@ const MenuBar = (): JSX.Element => {
 			justifyContent: "space-between",
 			alignItems: "center",
 			backgroundColor: "#9c27b0",
-			padding: 10
+			padding: 10,
+			zIndex: 3,
+			position: "fixed",
+			width: "99%",
 		}}>
 			<Link to="/">
 				<img
