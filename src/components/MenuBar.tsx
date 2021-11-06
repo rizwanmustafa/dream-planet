@@ -73,7 +73,7 @@ const MenuBar = (): JSX.Element => {
 				<img
 					src={logoImg}
 					alt="Aurora Cosmics Logo"
-					style={{ cursor: "pointer", height: 60 }}
+					style={{ cursor: "pointer", height: 45 }}
 				/>
 			</Link>
 			{
