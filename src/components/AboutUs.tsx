@@ -53,7 +53,7 @@ const AboutUs = (): JSX.Element => {
 					variant="contained"
 					color="secondary"
 					style={{ padding: "10px 50px", marginTop: "40px" }}
-					onClick={() => {history.push("/order"); window.scrollTo({ top: 0, behavior: 'smooth' })}}
+					onClick={() => { window.scroll(0, 0); history.push("/order"); }}
 				>
 					Book a ticket!
 				</Button>

@@ -99,6 +99,7 @@ const App = () => {
 					heading="Some scientific facts!"	
 					body="It is the only discovered planet other than Earth that is suitable for life.
 					It is completely covered by land and water is only found deep undergeround.
+					It's atmospheric composition is extremely similar to Earth except one exception: It contains a new gas called 'Rizmo'.
 					Moriz takes 275 days to complete its orbit.
 					It takes 24 hours to complete a rotation cycle just like Earth.
 					Summer stays for 9 months while winter stays only for 3 months.

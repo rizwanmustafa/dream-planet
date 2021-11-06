@@ -9,7 +9,7 @@ const IntroComponent1 = (): JSX.Element => {
 
 	return (
 		<div style={{ position: "relative", width: "100%", height: "500px", color: "white" }}>
-			<img src={planetHorizon} alt=""style={{ width: "100%", height: "100%", objectFit: 'cover' }} />
+			<img src={planetHorizon} alt="" style={{ width: "100%", height: "100%", objectFit: 'cover' }} />
 
 			<div style={{
 				position: "absolute",
@@ -26,7 +26,7 @@ const IntroComponent1 = (): JSX.Element => {
 					color="secondary"
 					variant="contained"
 					style={{ padding: "10px 50px", marginTop: "40px", }}
-					onClick={() => {history.push("/order"); window.scrollTo({ top: 0, behavior: 'smooth' })}}
+					onClick={() => { window.scroll(0, 0); history.push("/order"); }}
 				>
 					Book a ticket!
 				</Button>
