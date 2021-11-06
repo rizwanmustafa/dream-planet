@@ -20,6 +20,7 @@ const MenuBar = (): JSX.Element => {
 
 		backgroundColor: "white",
 		borderRadius: 10,
+		boxShadow: '0 0px 10px 0px grey',
 
 		// For menu opening animation
 		maxHeight: 0,

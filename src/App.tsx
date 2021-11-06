@@ -11,11 +11,13 @@ import { Switch, Route } from "react-router-dom";
 
 
 import "./styles/styles.css";
-import checkImage from "./images/check.jpeg";
-import rizwanImage from "./images/rizwan.jpg";
 import SpecieDescription from "./components/SpecieDescription";
 
-// Specie images
+
+// Images
+import supernova from "./images/supernova.webp";
+import rizwanImage from "./images/rizwan.jpg";
+import checkImage from "./images/check.jpeg";
 import electrarTree from "./images/ElectrarTree.png";
 import ramosar from "./images/ramosar.png"
 import ParagraphWithHeading from "./components/PargraphWithHeading";
@@ -104,14 +106,29 @@ const App = () => {
 						color="secondary"
 						style={{ textAlign: "center", marginBottom: 30, fontWeight: "bold" }}
 					>Discovery of Moriz</Typography>
+					<div style={{ display: "flex" }}>
 
-					<Typography
-						style={{
-							alignSelf: "center",
-							textAlign: "justify",
-						}}>
-						asdl;fkjl
-					</Typography>
+						<Typography
+							style={{
+								alignSelf: "center",
+								textAlign: "justify",
+								fontSize: 27,
+								lineHeight: "45px",
+								width: "50%",
+								paddingRight: 40,
+
+							}}>
+							After a great supernova explosion in Galaxy N-12794, Moriz was propelled in the direction of our galaxy, the Milky Way.
+							It took Moriz 190 million light years to reach our galaxy a great great luck.
+							Despite there being many planets and asteroids in its way, Moriz somehow miraculously did not hit even a single one of them.
+							When Moriz entered the Solar System, NASA's satellites detected it as an "unknown" object.
+							Scientists were only able to get clear images of Moriz, once it mystically started orbitting the Sun while remaining between Venus and Earth.
+						</Typography>
+
+						<div style={{ width: "50%" }}>
+							<img src={supernova} style={{ width: "100%", height: "100%", objectFit:"cover", borderRadius: 10,}} alt="Supernova" />
+						</div>
+					</div>
 				</div>
 
 				<div style={{
@@ -121,7 +138,7 @@ const App = () => {
 					flexDirection: "column",
 					backgroundColor: "white",
 					width: "75vw",
-					
+
 					margin: "50px 10px",
 					padding: 30,
 					borderRadius: 10,
