@@ -126,7 +126,7 @@ const App = () => {
 						</Typography>
 
 						<div style={{ width: "50%" }}>
-							<img src={supernova} style={{ width: "100%", height: "100%", objectFit:"cover", borderRadius: 10,}} alt="Supernova" />
+							<img src={supernova} style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: 10, }} alt="Supernova" />
 						</div>
 					</div>
 				</div>
@@ -184,7 +184,7 @@ const App = () => {
 					/>
 
 					<ParagraphWithHeading
-						heading="Extremely fertile soil but..."
+						heading="Extremely fertile soil"
 						body="It has been discovered that the soil of Planet Moriz is extremely fertile and the reason for this is a newly discovered element 'Wanza'.
 					This mystical element speeds up the growing process of every plant by up to 20 times and allows them to grow in the soil of Planet Moriz irrespective of the seasons. This is an extremely good news as this will help in satisfying the feeding needs of the human population"
 					/>
