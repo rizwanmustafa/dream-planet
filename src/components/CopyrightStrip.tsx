@@ -1,8 +1,17 @@
 import Typography from "@material-ui/core/Typography";
 
-const CopyrightStrip = (): JSX.Element => {
+interface Props {
+	tabletMode: boolean
+}
+
+const CopyrightStrip = (props: Props): JSX.Element => {
 	return (
-		<div id="copyrightStrip" style={{ backgroundColor: "black", padding: "15px", color: "white" }}>
+		<div id="copyrightStrip" style={{
+			backgroundColor: "black",
+			padding: "15px",
+			color: "white",
+			textAlign: props.tabletMode ? "center" : "unset"
+		}}>
 			<Typography component="p" variant="body1">Copyright © 2021 Rights Reserved.</Typography>
 		</div >
 	)

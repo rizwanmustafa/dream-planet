@@ -4,7 +4,12 @@ import Button from "@material-ui/core/Button";
 
 import planetHorizon from "../images/planet-horizon.png";
 
-const IntroComponent1 = (): JSX.Element => {
+interface Props {
+	mobileMode: boolean;
+	tabletMode: boolean;
+}
+
+const IntroComponent1 = (props: Props): JSX.Element => {
 	const history = useHistory();
 
 	return (
@@ -22,7 +27,9 @@ const IntroComponent1 = (): JSX.Element => {
 				left: "50%",
 				top: "50%",
 				textAlign: "center",
-				transform: "translate(-50%, -50%)"
+				transform: "translate(-50%, -50%)",
+
+				width: props.tabletMode ? "100%" : "unset",
 			}}>
 
 				<Typography component="h1" variant="h2" style={{ maxWidth: 750, fontWeight: "bold" }}>

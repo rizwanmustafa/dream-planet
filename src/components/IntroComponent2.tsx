@@ -4,25 +4,39 @@ import Typography from "@material-ui/core/Typography";
 
 import planetLogo from "../images/planet-image-new.png";
 import solarSystem from "../images/solar-system.png";
+import { CSSProperties } from "react";
 
+interface Props {
+	mobileMode: boolean;
+	tabletMode: boolean;
+}
 
-const IntroComponent2 = () => {
+const IntroComponent2 = (props: Props) => {
 	const history = useHistory();
 
 	const parentDivStyles = {
 		display: "flex",
-		alignSelf: "center"
+		alignSelf: "center",
+		flexDirection: props.tabletMode ? "column-reverse" : "row",
+		alignItems: props.tabletMode ? "center" : "unset",
 	}
 
 	const textDivStyles = {
 		alignSelf: "center",
-		maxWidth: "700px",
-		paddingLeft: "20px",
+		maxWidth: !props.tabletMode ? "700px" : "100%",
+		paddingLeft: !props.tabletMode ? "20px" : 0,
+		margin: props.tabletMode ? 20 : 0,
+		textAlign: props.tabletMode ? "center" : "unset",
 	}
 
 	const imageStyles = {
 		width: "50vw",
 		maxWidth: "500px",
+	}
+
+	const buttonStyles: CSSProperties = {
+		padding: "10px 20px",
+		margin: props.tabletMode ? 10 : "40px 10px",
 	}
 
 	return (
@@ -34,14 +48,14 @@ const IntroComponent2 = () => {
 			margin: "50px 10px",
 			color: "white",
 		}}>
-			<div style={parentDivStyles}>
-				<div style={textDivStyles}>
+			<div style={parentDivStyles as CSSProperties}>
+				<div style={textDivStyles as React.CSSProperties}>
 					<Typography variant="h2" component="h2" color="secondary" style={{ fontWeight: "bold" }}>Moriz</Typography>
 					<p style={
 						{
 							lineHeight: "35px",
 							fontSize: "20px",
-							paddingRight: "100px",
+							paddingRight: !props.tabletMode ? "100px" : 0,
 							textAlign: "justify",
 						}
 					}>
@@ -56,18 +70,21 @@ const IntroComponent2 = () => {
 				</div>
 			</div>
 
-			<div>
+			<div style={{
+				display: "flex",
+				flexDirection: props.tabletMode ? "column" : "row"
+			}}>
 				<Button
 					color="secondary"
 					variant="contained"
-					style={{ padding: "10px 20px", margin: "40px 10px", }}
+					style={buttonStyles}
 					onClick={() => { window.scroll(0, 0); history.push("/discovery_and_features"); }}
 				>Read about its Discovery and Features</Button>
 
 				<Button
 					color="secondary"
 					variant="contained"
-					style={{ padding: "10px 20px", margin: "40px 10px", }}
+					style={buttonStyles}
 					onClick={() => { window.scroll(0, 0); history.push("/species"); }}
 				>
 					Read about Native Species
@@ -75,12 +92,17 @@ const IntroComponent2 = () => {
 
 			</div>
 
-			<div style={{ display: "flex", alignItems: "center", flexDirection: "column", maxWidth: 1220 }}>
+			<div style={{
+				display: "flex",
+				alignItems: "center",
+				flexDirection: "column",
+				maxWidth: 1220
+			}}>
 				<Typography
 					color="secondary"
 					component="h2"
 					variant="h2"
-					style={{ fontWeight: "bold", margin: "50px 10px" }}
+					style={{ fontWeight: "bold", margin: props.tabletMode ? 10 : "50px 10px", textAlign:"center" }}
 				>
 					Moriz's Position in the Solar System
 				</Typography>
