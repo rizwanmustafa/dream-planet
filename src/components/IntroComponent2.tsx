@@ -102,9 +102,9 @@ const IntroComponent2 = (props: Props) => {
 					color="secondary"
 					component="h2"
 					variant="h2"
-					style={{ fontWeight: "bold", margin: props.tabletMode ? 10 : "50px 10px", textAlign:"center" }}
+					style={{ fontWeight: "bold", margin: "50px 10px", textAlign: "center" }}
 				>
-					Moriz's Position in the Solar System
+					Our Solar System
 				</Typography>
 
 				<img src={solarSystem} alt="Solar System" style={{ width: "100%", borderRadius: 10 }} />

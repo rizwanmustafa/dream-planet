@@ -141,7 +141,7 @@ const App = () => {
 							color="secondary"
 							style={{ textAlign: "center", marginBottom: 30, fontWeight: "bold" }}
 						>Discovery of Moriz</Typography>
-						<div style={{ display: "flex" }}>
+						<div style={{ display: "flex", flexDirection: tabletMode ? "column" : "row" }}>
 
 							<Typography
 								style={{
@@ -149,8 +149,8 @@ const App = () => {
 									textAlign: "justify",
 									fontSize: 23,
 									lineHeight: "35px",
-									width: "60%",
-									paddingRight: 40,
+									width: !tabletMode ? "60%" : "100%",
+									padding: tabletMode ? 10 : "0 40px 0 0",
 
 								}}>
 								After a great supernova explosion in Galaxy N-12794, Moriz was propelled in the direction of our galaxy, the Milky Way.
@@ -160,7 +160,7 @@ const App = () => {
 								Scientists were only able to get clear images of Moriz, once it mystically started orbitting the Sun while remaining between Venus and Earth.
 							</Typography>
 
-							<div style={{ width: "40%" }}>
+							<div style={{ width: tabletMode ? "100%" : "40%" }}>
 								<img src={supernova} style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: 10, }} alt="Supernova" />
 							</div>
 						</div>
@@ -201,6 +201,7 @@ const App = () => {
 								"Scientists estimate that about 75% of the human population will have shifted to Moriz by 2053"
 
 							]}
+							tabletMode={tabletMode}
 						/>
 
 						<ParagraphWithHeading
@@ -211,6 +212,7 @@ const App = () => {
 						Scientists are still figuring out how the magical Rizmo does this but it is absolutely stunning.
 						This gas will allow humans to live on Planet Moriz without getting infected by diseases or pandemics.
 						This magical gas is also the reason behind the iconic purple colour of the planet."
+							tabletMode={tabletMode}
 						/>
 
 						<ParagraphWithHeading
@@ -221,12 +223,15 @@ const App = () => {
 						Scientists are hoping to use the bonsar trees for extensive agriculture and satisfying the food requirements of the population on Earth.
 						Electrar Trees on the other hand will be used to generate and store electricity.
 						The electricity will then be provided to the future population and industries of Planet Moriz."
+							tabletMode={tabletMode}
 						/>
 
 						<ParagraphWithHeading
 							heading="Extremely fertile soil"
 							body="It has been discovered that the soil of Planet Moriz is extremely fertile and the reason for this is a newly discovered element 'Wanza'.
-						This mystical element speeds up the growing process of every plant by up to 20 times and allows them to grow in the soil of Planefile:///home/rizwan/Downloads/vale.pngt Moriz irrespective of the seasons. This is an extremely good news as this will help in satisfying the feeding needs of the human population"
+						This mystical element speeds up the growing process of every plant by up to 20 times and allows them to grow in the soil of Planet Moriz irrespective of the seasons.
+						This is an extremely good news as this will help in satisfying the feeding needs of the human population."
+							tabletMode={tabletMode}
 						/>
 					</div>
 				</Route>
