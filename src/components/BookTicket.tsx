@@ -5,14 +5,19 @@ import Button from "@material-ui/core/Button";
 
 import planetImage from "../images/for-ticket-page.png";
 
+interface Props {
+	tabletMode: boolean;
+}
 
-const BookTicket = (): JSX.Element => {
+
+const BookTicket = (props: Props): JSX.Element => {
 	const [message, setMessage] = useState<string>("");
 
 	return (
 		<form
 			style={{
 				display: "flex",
+				flexDirection: props.tabletMode ? "column" : "row",
 				alignSelf: "center",
 				margin: "20px",
 				textAlign: "center",
@@ -27,9 +32,11 @@ const BookTicket = (): JSX.Element => {
 				style={{
 					background: "black",
 					padding: "20px",
-					width: "400px",
+					width: props.tabletMode ? "unset" : "400px",
+					height: props.tabletMode ? "30vh" : "unset",
 					display: "flex",
 					alignItems: "center",
+					justifyContent: "center",
 					borderTopLeftRadius: "5px",
 					borderBottomLeftRadius: "5px",
 				}}
@@ -38,7 +45,7 @@ const BookTicket = (): JSX.Element => {
 				<img
 					src={planetImage}
 					alt="Planet Moriz"
-					style={{ width: "100%" }}
+					style={{ width: props.tabletMode ? "unset" : "100%", height: props.tabletMode ? "100%" : "unset", }}
 				/>
 			</div>
 

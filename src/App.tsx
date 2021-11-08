@@ -78,7 +78,7 @@ const App = () => {
 				</Route>
 
 				<Route path="/order" exact>
-					<BookTicket />
+					<BookTicket tabletMode={tabletMode} />
 				</Route>
 
 				<Route path="/species" exact>
