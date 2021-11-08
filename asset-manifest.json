@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dream-planet/static/css/main.d410869a.chunk.css",
-    "main.js": "/dream-planet/static/js/main.05311f91.chunk.js",
-    "main.js.map": "/dream-planet/static/js/main.05311f91.chunk.js.map",
+    "main.js": "/dream-planet/static/js/main.1a98fcdd.chunk.js",
+    "main.js.map": "/dream-planet/static/js/main.1a98fcdd.chunk.js.map",
     "runtime-main.js": "/dream-planet/static/js/runtime-main.a5afa9d9.js",
     "runtime-main.js.map": "/dream-planet/static/js/runtime-main.a5afa9d9.js.map",
     "static/js/2.ef1575fa.chunk.js": "/dream-planet/static/js/2.ef1575fa.chunk.js",
@@ -20,15 +20,15 @@
     "static/media/planet-horizon.72d661e6.png": "/dream-planet/static/media/planet-horizon.72d661e6.png",
     "static/media/planet-image-new.b18a436e.png": "/dream-planet/static/media/planet-image-new.b18a436e.png",
     "static/media/ramosar.81bfa552.png": "/dream-planet/static/media/ramosar.81bfa552.png",
-    "static/media/random.6bd6e578.png": "/dream-planet/static/media/random.6bd6e578.png",
     "static/media/rizwan.08b1c29c.jpg": "/dream-planet/static/media/rizwan.08b1c29c.jpg",
     "static/media/solar-system.df780773.png": "/dream-planet/static/media/solar-system.df780773.png",
+    "static/media/supernova.6bd6e578.png": "/dream-planet/static/media/supernova.6bd6e578.png",
     "static/media/vale.e5ba3fa7.png": "/dream-planet/static/media/vale.e5ba3fa7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a5afa9d9.js",
     "static/js/2.ef1575fa.chunk.js",
     "static/css/main.d410869a.chunk.css",
-    "static/js/main.05311f91.chunk.js"
+    "static/js/main.1a98fcdd.chunk.js"
   ]
 }
