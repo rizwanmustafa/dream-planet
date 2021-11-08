@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/dream-planet/static/css/main.35ee34d7.chunk.css",
-    "main.js": "/dream-planet/static/js/main.367a6689.chunk.js",
-    "main.js.map": "/dream-planet/static/js/main.367a6689.chunk.js.map",
+    "main.css": "/dream-planet/static/css/main.d410869a.chunk.css",
+    "main.js": "/dream-planet/static/js/main.efe26171.chunk.js",
+    "main.js.map": "/dream-planet/static/js/main.efe26171.chunk.js.map",
     "runtime-main.js": "/dream-planet/static/js/runtime-main.a5afa9d9.js",
     "runtime-main.js.map": "/dream-planet/static/js/runtime-main.a5afa9d9.js.map",
     "static/js/2.4bf07d66.chunk.js": "/dream-planet/static/js/2.4bf07d66.chunk.js",
     "static/js/2.4bf07d66.chunk.js.map": "/dream-planet/static/js/2.4bf07d66.chunk.js.map",
     "index.html": "/dream-planet/index.html",
-    "static/css/main.35ee34d7.chunk.css.map": "/dream-planet/static/css/main.35ee34d7.chunk.css.map",
+    "static/css/main.d410869a.chunk.css.map": "/dream-planet/static/css/main.d410869a.chunk.css.map",
     "static/js/2.4bf07d66.chunk.js.LICENSE.txt": "/dream-planet/static/js/2.4bf07d66.chunk.js.LICENSE.txt",
     "static/media/ElectrarTree.6ceb08d1.png": "/dream-planet/static/media/ElectrarTree.6ceb08d1.png",
     "static/media/about-us-bg.8dfc2bc7.jpeg": "/dream-planet/static/media/about-us-bg.8dfc2bc7.jpeg",
     "static/media/bonsar-tree.44f70709.png": "/dream-planet/static/media/bonsar-tree.44f70709.png",
     "static/media/check.8dfc2bc7.jpeg": "/dream-planet/static/media/check.8dfc2bc7.jpeg",
-    "static/media/for-ticket-page.cd7d5305.png": "/dream-planet/static/media/for-ticket-page.cd7d5305.png",
+    "static/media/for-ticket-page.576f93bc.png": "/dream-planet/static/media/for-ticket-page.576f93bc.png",
     "static/media/logo.b3e19427.png": "/dream-planet/static/media/logo.b3e19427.png",
     "static/media/planet-horizon.72d661e6.png": "/dream-planet/static/media/planet-horizon.72d661e6.png",
     "static/media/planet-image-new.b18a436e.png": "/dream-planet/static/media/planet-image-new.b18a436e.png",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.a5afa9d9.js",
     "static/js/2.4bf07d66.chunk.js",
-    "static/css/main.35ee34d7.chunk.css",
-    "static/js/main.367a6689.chunk.js"
+    "static/css/main.d410869a.chunk.css",
+    "static/js/main.efe26171.chunk.js"
   ]
 }
