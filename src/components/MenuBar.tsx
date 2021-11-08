@@ -18,21 +18,20 @@ const MenuBar = (): JSX.Element => {
 		flexDirection: "column",
 
 
-		backgroundColor: "white",
+		backgroundColor: "black",
 		borderRadius: 10,
-		boxShadow: '0 0px 10px 0px grey',
 
 		// For menu opening animation
 		maxHeight: 0,
 		overflow: "hidden",
-		transition: "max-height 0.5s ease-in-out",
-
+		transition: "max-height 0.5s ease-in-out, border 0.5s ease-in-out",
 	}
 
 	const menuChildrenStyles: CSSProperties = {
 		padding: "15px 20px",
 		textDecoration: "none",
-		color: "#9c27b0",
+		// color: "#9c27b0",
+		color: "white",
 		fontWeight: "bold",
 	}
 
@@ -55,10 +54,14 @@ const MenuBar = (): JSX.Element => {
 	useEffect(() => {
 
 		const menu = document.querySelector("#menu") as HTMLElement;
-		if (showMenu)
+		if (showMenu) {
 			menu.style.maxHeight = menu.scrollHeight + "px";
-		else
+			menu.style.border = "2px solid #9c27b0"
+		}
+		else {
 			menu.style.maxHeight = "0";
+			menu.style.border = "0px solid #9c27b0";
+		}
 	}, [showMenu])
 
 

@@ -10,16 +10,18 @@ interface Props {
 const HeadingParagraphWithPicture = (props: Props): JSX.Element => {
 	return (
 		<div style={{
-			backgroundColor: "white",
+			backgroundColor: "transparent",
+			color: "white",
 			margin: 20,
 			borderRadius: 10,
 			display: "flex",
 			width: "75%",
 			alignSelf: "center",
+			outline: "2px solid #9c27b0",
 		}}>
-			<div style={{ width: "60%", padding: 20, }}>
+			<div style={{ width: "60%", padding: 30, }}>
 				<ClassicHeading>{props.heading}</ClassicHeading>
-				<Typography style={{fontSize: 18, lineHeight: "33px"}}>{props.body}</Typography>
+				<Typography style={{ fontSize: 18, lineHeight: "33px" }}>{props.body}</Typography>
 			</div>
 
 			<div style={{ width: "40%" }}>

@@ -12,7 +12,18 @@ interface Founder {
 const FounderArray = (props: Props): JSX.Element => {
 	const founderElements = props.founders.map((founder, index) => {
 		return (
-			<div key={index} style={{ display: "flex", flexDirection: "column", alignItems: "center", margin: 30, backgroundColor: "white", padding: 20, width: 250, borderRadius: 10 }}>
+			<div key={index} style={{
+				display: "flex",
+				flexDirection: "column",
+				alignItems: "center",
+				margin: 30,
+				backgroundColor: "transparent",
+				padding: 20,
+				width: 250,
+				borderRadius: 10,
+				color: "white",
+				outline: "2px solid #9c27b0",
+			}}>
 				<img
 					src={founder.founderImage}
 					alt={`${founder.founderName}`}
@@ -28,7 +39,7 @@ const FounderArray = (props: Props): JSX.Element => {
 			<Typography
 				component="h1"
 				variant="h2"
-				style={{ textAlign: "center", marginBottom: 30, marginTop: 50 }}
+				style={{ textAlign: "center", marginBottom: 30, marginTop: 50, color: "white" }}
 			>
 				<b>Founders</b>
 			</Typography>

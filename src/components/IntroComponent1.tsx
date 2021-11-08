@@ -8,7 +8,13 @@ const IntroComponent1 = (): JSX.Element => {
 	const history = useHistory();
 
 	return (
-		<div style={{ position: "relative", width: "100%", height: "500px", color: "white" }}>
+		<div style={{
+			position: "relative",
+			width: "100%",
+			height: "500px",
+			color: "white",
+			borderBottom: "1px solid #9c27b0",
+		}}>
 			<img src={planetHorizon} alt="" style={{ width: "100%", height: "100%", objectFit: 'cover' }} />
 
 			<div style={{

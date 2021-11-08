@@ -26,7 +26,14 @@ const IntroComponent2 = () => {
 	}
 
 	return (
-		<div style={{ display: "flex", flexDirection: "column", alignItems: "center", alignSelf: "center", margin: "50px 10px" }}>
+		<div style={{
+			display: "flex",
+			flexDirection: "column",
+			alignItems: "center",
+			alignSelf: "center",
+			margin: "50px 10px",
+			color: "white",
+		}}>
 			<div style={parentDivStyles}>
 				<div style={textDivStyles}>
 					<Typography variant="h2" component="h2" color="secondary" style={{ fontWeight: "bold" }}>Moriz</Typography>
@@ -54,7 +61,7 @@ const IntroComponent2 = () => {
 					color="secondary"
 					variant="contained"
 					style={{ padding: "10px 20px", margin: "40px 10px", }}
-					onClick={() => { window.scroll(0,0); history.push("/discovery_and_features");}}
+					onClick={() => { window.scroll(0, 0); history.push("/discovery_and_features"); }}
 				>Read about its Discovery and Features</Button>
 
 				<Button

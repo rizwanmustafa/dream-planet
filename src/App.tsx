@@ -98,11 +98,13 @@ const App = () => {
 					alignSelf: "center",
 					display: "flex",
 					flexDirection: "column",
-					backgroundColor: "white",
+					backgroundColor: "transparent",
+					color: "white",
 					marginTop: 30,
 					padding: 30,
 					width: "75vw",
 					borderRadius: 10,
+					outline: "2px solid #9c27b0"
 				}}>
 					<Typography
 						variant="h2"
@@ -140,12 +142,14 @@ const App = () => {
 					alignSelf: "center",
 					alignItems: "center",
 					flexDirection: "column",
-					backgroundColor: "white",
+					backgroundColor: "transparent",
+					color: "white",
 					width: "75vw",
 
 					margin: "50px 10px",
 					padding: 30,
 					borderRadius: 10,
+					outline: "2px solid #9c27b0"
 
 				}}>
 					<Typography

@@ -16,8 +16,10 @@ const BookTicket = (): JSX.Element => {
 				alignSelf: "center",
 				margin: "20px",
 				textAlign: "center",
-				backgroundColor: "white",
+				backgroundColor: "transparent",
+				color: "white",
 				borderRadius: "5px",
+				outline: "2px solid #9c27b0",
 			}}
 		>
 
@@ -65,6 +67,7 @@ const BookTicket = (): JSX.Element => {
 					style={{ marginBottom: 20 }}
 					required
 					id="fullNameInput"
+					sx={{ "*": { color: "black !important" }, "input": { backgroundColor: "white" } }}
 				/>
 
 				<TextField
@@ -75,6 +78,7 @@ const BookTicket = (): JSX.Element => {
 					required
 					id="emailAddressInput"
 					type="email"
+					sx={{ "*": { color: "black !important" }, "input": { backgroundColor: "white" } }}
 				/>
 
 				<TextField
@@ -86,6 +90,7 @@ const BookTicket = (): JSX.Element => {
 					placeholder="1"
 					required
 					id="noOfTicketsInput"
+					sx={{ "*": { color: "black !important" }, "input": { backgroundColor: "white" } }}
 				/>
 
 				<Button

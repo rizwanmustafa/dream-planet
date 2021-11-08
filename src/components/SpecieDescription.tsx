@@ -14,10 +14,12 @@ const SpecieDescription = (props: Props): JSX.Element => {
 			display: "flex",
 			justifyContent: "space-between",
 			marginBottom: 20,
-			backgroundColor: "white",
+			backgroundColor: "transparent",
 			borderRadius: 10,
 			width: "75%",
 			alignSelf: "center",
+			color: "white",
+			outline: "2px solid #9c27b0"
 		}}>
 			<div style={{ width: "70%", padding: 20 }}>
 				<Typography color="secondary" component="h3" variant="h4"><b>{props.name}</b></Typography>

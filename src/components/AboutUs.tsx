@@ -17,7 +17,8 @@ const AboutUs = (): JSX.Element => {
 			alignItems: "center",
 			backgroundImage: `url(${checkBG})`,
 			backgroundRepeat: "no-repeat",
-			backgroundPosition: "center"
+			backgroundPosition: "center",
+			borderBottom: "2px solid #9c27b0",
 		}}>
 
 			<Typography
