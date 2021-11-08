@@ -96,6 +96,7 @@ const App = () => {
 					They absorb carbon dioxide and release oxygen 20 times faster than plants on Earth.
 					They can also produce all fruits and vegetables available on Earth, all year round no matter what the season."
 						photo={bonsarTree}
+						tabletMode={tabletMode}
 					/>
 
 					<SpecieDescription
@@ -105,6 +106,7 @@ const App = () => {
 					Scientists have deduced that the electrar trees only produced light before the supernova explosion but now they also produce electricity, thanks to a mutation in their DNA due to the explosion.
 					Their black part is what performs photosynthesis and it absorbs 100% of the energy provided by sun which means it is extremely efficient."
 						photo={electrarTree}
+						tabletMode={tabletMode}
 					/>
 
 					<SpecieDescription
@@ -119,6 +121,7 @@ const App = () => {
 							<>Image by <a href='https://pixabay.com/users/anaterate-2348028/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3317701'>Wolfgang Eckert</a> from <a href='https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3317701'>Pixabay</a></>
 						}
 						photo={ramosar}
+						tabletMode={tabletMode}
 					/>
 				</Route>
 
