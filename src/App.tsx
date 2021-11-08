@@ -15,12 +15,16 @@ import SpecieDescription from "./components/SpecieDescription";
 
 
 // Images
-import supernova from "./images/supernova.webp";
+// import supernova from "./images/supernova.webp";
+import supernova from "./images/random.png"
 import rizwanImage from "./images/rizwan.jpg";
 import checkImage from "./images/check.jpeg";
+import bonsarTree from "./images/bonsar-tree.png";
 import electrarTree from "./images/ElectrarTree.png";
 import ramosar from "./images/ramosar.png"
 import ParagraphWithHeading from "./components/PargraphWithHeading";
+import ListParagraph from "./components/ListParagraph";
+import HeadingParagraphWithPicture from "./components/HeadingParagraphWithPicture";
 
 
 const App = () => {
@@ -62,14 +66,14 @@ const App = () => {
 					They are one of the native species that survived supernova explosion.
 					They absorb carbon dioxide and release oxygen 20 times faster than plants on Earth.
 					They can also produce all fruits and vegetables available on Earth, all year round no matter what the season."
-					photo={checkImage}
+					photo={bonsarTree}
 				/>
 
 				<SpecieDescription
 					name="Electrar Trees"
 					type="Plant"
 					description="Electrar trees may look like something out of a sci-fi movie, but they are a reality.
-					Scientists have deduced that the electrar trees only produced light before the supernova explosion but now they also produce electricity, thanks to a mutation in their DNA due to the explosion. 
+					Scientists have deduced that the electrar trees only produced light before the supernova explosion but now they also produce electricity, thanks to a mutation in their DNA due to the explosion.
 					Their black part is what performs photosynthesis and it absorbs 100% of the energy provided by sun which means it is extremely efficient."
 					photo={electrarTree}
 				/>
@@ -77,7 +81,7 @@ const App = () => {
 				<SpecieDescription
 					name="Ramosar"
 					type="Animal"
-					description="Seems like alien movies were right after all. 
+					description="Seems like alien movies were right after all.
 					Ramosar is an alien spcies that unfortunately did not survive the supernova explosion.
 					However, there is no need to panic.
 					Ramosar may look frightening but scientists have discovered that they are way weaker than humans, physically and mentally.
@@ -112,9 +116,9 @@ const App = () => {
 							style={{
 								alignSelf: "center",
 								textAlign: "justify",
-								fontSize: 27,
-								lineHeight: "45px",
-								width: "50%",
+								fontSize: 23,
+								lineHeight: "35px",
+								width: "60%",
 								paddingRight: 40,
 
 							}}>
@@ -125,7 +129,7 @@ const App = () => {
 							Scientists were only able to get clear images of Moriz, once it mystically started orbitting the Sun while remaining between Venus and Earth.
 						</Typography>
 
-						<div style={{ width: "50%" }}>
+						<div style={{ width: "40%" }}>
 							<img src={supernova} style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: 10, }} alt="Supernova" />
 						</div>
 					</div>
@@ -151,32 +155,35 @@ const App = () => {
 						style={{ textAlign: "center", margin: "30px 0", fontWeight: "bold" }}
 					>Fabulous Features of Moriz</Typography>
 
-					<ParagraphWithHeading
+					<ListParagraph
 						heading="Some scientific facts!"
-						body="It is the only discovered planet other than Earth that is suitable for life.
-					It is completely covered by land and water is only found deep undergeround.
-					It's atmospheric composition is extremely similar to Earth except one exception: It contains a new gas called 'Rizmo'.
-					Moriz takes 275 days to complete its orbit.
-					It takes 24 hours to complete a rotation cycle just like Earth.
-					Summer stays for 9 months while winter stays only for 3 months.
-					Average temperature at Moriz is 16 celsius.
-					Scientists estimate that about 75% of the human population will have shifted to Moriz by 2053."
+						listItems={[
+							"It is the only discovered planet other than Earth that is suitable for life",
+							"It is completely covered by land and water is only found deep undergeround",
+							"It's atmospheric composition is extremely similar to Earth except one exception: It contains a new gas called 'Rizmo'",
+							"Moriz takes 275 days to complete its orbit",
+							"It takes 24 hours to complete a rotation cycle just like Earth",
+							"Summer stays for 9 months while winter stays only for 3 months",
+							"Average temperature at Moriz is 16 celsius",
+							"Scientists estimate that about 75% of the human population will have shifted to Moriz by 2053"
+
+						]}
 					/>
 
 					<ParagraphWithHeading
 						heading="A magical gas 'Rizmo'"
-						body="A magical gas Rizmo has been discovered on the Planet Moriz. 
-					It constitutes for 2% of Planet Moriz's atmosphere and its magical properties may leave you surprised just like the scientists who discovered it. 
-					This gas kills harmful microbes including bacteria and viruses upon coming in contact with them. 
-					Scientists are still figuring out how the magical Rizmo does this but it is absolutely stunning. 
-					This gas will allow humans to live on Planet Moriz without getting infected by diseases or pandemics. 
+						body="A magical gas Rizmo has been discovered on the Planet Moriz.
+					It constitutes for 2% of Planet Moriz's atmosphere and its magical properties may leave you surprised just like the scientists who discovered it.
+					This gas kills harmful microbes including bacteria and viruses upon coming in contact with them.
+					Scientists are still figuring out how the magical Rizmo does this but it is absolutely stunning.
+					This gas will allow humans to live on Planet Moriz without getting infected by diseases or pandemics.
 					This magical gas is also the reason behind the iconic purple colour of the planet."
 					/>
 
 					<ParagraphWithHeading
 						heading="Mostly covered by Trees"
-						body="The surface of Planet Moriz is mostly covered by the trees of Bonsar and Electrar. 
-					They can be found nearly everywhere. 
+						body="The surface of Planet Moriz is mostly covered by the trees of Bonsar and Electrar.
+					They can be found nearly everywhere.
 					After analyzing, scientists have said that 50.1% of the Planet Moriz's surface is covered by Bonsar Trees and 30.3% is covered by the Electrar Trees.
 					Scientists are hoping to use the bonsar trees for extensive agriculture and satisfying the food requirements of the population on Earth.
 					Electrar Trees on the other hand will be used to generate and store electricity.
@@ -191,6 +198,31 @@ const App = () => {
 				</div>
 			</Route>
 
+			<Route path="/tourist_attractions" exact>
+				<HeadingParagraphWithPicture
+					heading="Vale of Volcanoes"
+					body="
+					The Vale of Volcanoes is a group of 51 volcanoes that exist about fifty kilometres away from the Great Fall of Rismo.
+					Only 34 volcanoes in this group are currently active.
+					The sight of these volcanoes erupting is bound to shock you with its beauty.
+					These volcanoes release 'Rizmo' and lava.
+					The lava released from these volcanoes is quite different from the lava released by volcanoes on Earth.
+					Since the lava mostly contains 'Wanza', the international government of Moriz has decided to use this lava to create a highly fertile agricultural area about 20 kilometer away from the volcanoes.
+					Unlike Earth, these volcanic eruptions do not cause any harm to the environment of Moriz and the humans.  
+					"
+					picture={checkImage}
+				/>
+
+				<HeadingParagraphWithPicture
+					heading="Great Fall of Rismo"
+					body="The Great Fall of Rismo possesses unexplainable glory that stuns its viewers. The waterfall is fed by rain and the magical Rizmo. The 'purple water' then fall down the cliff into an abyss. Scientists are yet to know about the mysteries that lie in the mist below the cliff.
+					People are forced to maintain a safe distance from the site to cause any accidents.
+					However it can be seen and photographed from a small site close to the picnic area created by the international government of Moriz.
+					The fall is sometimes referred to as an ephemeral fall because it can only be seen in mid summers for a brief amount of time."
+					picture={checkImage}
+				/>
+			</Route>
+
 			<Route path="/" exact>
 				<IntroComponent1 />
 				<IntroComponent2 />
@@ -198,7 +230,7 @@ const App = () => {
 
 
 
-		</Switch>
+		</Switch >
 	)
 }
 

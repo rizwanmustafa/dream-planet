@@ -16,13 +16,13 @@ const SpecieDescription = (props: Props): JSX.Element => {
 			marginBottom: 20,
 			backgroundColor: "white",
 			borderRadius: 10,
-			width: "60%",
+			width: "75%",
 			alignSelf: "center",
 		}}>
 			<div style={{ width: "70%", padding: 20 }}>
 				<Typography color="secondary" component="h3" variant="h4"><b>{props.name}</b></Typography>
-				<Typography component="p">Type: {props.type}</Typography>
-				<Typography component="p" style={{ paddingTop: 10 }}>{props.description}</Typography>
+				<Typography component="p" style={{ fontSize: 20 }}>Type: {props.type}</Typography>
+				<Typography component="p" style={{ fontSize: 20, marginTop: 20 }}>{props.description}</Typography>
 
 				{props.attribution === undefined ||
 					<Typography component="p" style={{ paddingTop: 10 }}>{props.attribution}</Typography>

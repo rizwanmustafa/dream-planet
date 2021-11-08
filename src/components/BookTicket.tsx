@@ -74,6 +74,7 @@ const BookTicket = (): JSX.Element => {
 					style={{ marginBottom: 20 }}
 					required
 					id="emailAddressInput"
+					type="email"
 				/>
 
 				<TextField

@@ -72,6 +72,7 @@ const MenuBar = (): JSX.Element => {
 			zIndex: 3,
 			position: "fixed",
 			width: "99%",
+			textAlign: "right",
 		}}>
 			<Link to="/">
 				<img
@@ -107,6 +108,7 @@ const MenuBar = (): JSX.Element => {
 				<Link to="/" style={menuChildrenStyles}>Home</Link>
 				<Link to="/discovery_and_features" style={menuChildrenStyles}>Discovery and Features</Link>
 				<Link to="/species" style={menuChildrenStyles}>Species</Link>
+				<Link to="/tourist_attractions" style={menuChildrenStyles}>Tourist Attractions</Link>
 				<Link to="/order" style={menuChildrenStyles}>Order a Ticket</Link>
 				<Link to="/aboutus" style={menuChildrenStyles}>About Us</Link>
 			</div>
