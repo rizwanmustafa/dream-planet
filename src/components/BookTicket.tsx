@@ -45,7 +45,7 @@ const BookTicket = (props: Props): JSX.Element => {
 				<img
 					src={planetImage}
 					alt="Planet Moriz"
-					style={{ width: props.tabletMode ? "unset" : "100%", height: props.tabletMode ? "100%" : "unset", }}
+					style={{ width: props.tabletMode ? "unset" : "100%", height: props.tabletMode ? "100%" : "unset", borderRadius:10}}
 				/>
 			</div>
 
