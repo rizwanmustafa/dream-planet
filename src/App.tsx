@@ -252,6 +252,7 @@ const App = () => {
 					Unlike Earth, these volcanic eruptions do not cause any harm to the environment of Moriz and the humans.  
 					"
 						picture={valeImage}
+						tabletMode={tabletMode}
 					/>
 
 					<HeadingParagraphWithPicture
@@ -261,6 +262,7 @@ const App = () => {
 					However it can be seen and photographed from a small site close to the picnic area created by the international government of Moriz.
 					The fall is sometimes referred to as an ephemeral fall because it can only be seen in mid summers for a brief amount of time."
 						picture={fallImage}
+						tabletMode={tabletMode}
 					/>
 				</Route>
 
