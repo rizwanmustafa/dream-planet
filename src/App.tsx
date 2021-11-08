@@ -20,7 +20,7 @@ import HeadingParagraphWithPicture from "./components/HeadingParagraphWithPictur
 
 // Images
 // import supernova from "./images/supernova.webp";
-import supernova from "./images/random.png"
+import supernova from "./images/supernova.png"
 import rizwanImage from "./images/rizwan.jpg";
 import checkImage from "./images/check.jpeg";
 import bonsarTree from "./images/bonsar-tree.png";
