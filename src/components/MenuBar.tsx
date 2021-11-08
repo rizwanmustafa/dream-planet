@@ -92,7 +92,8 @@ const MenuBar = (): JSX.Element => {
 						style={{
 							color: "white",
 							fontSize: 40,
-							cursor: "pointer"
+							cursor: "pointer",
+							paddingRight: 20,
 						}}
 						onClick={() => setShowMenu(!showMenu)}
 					/>
