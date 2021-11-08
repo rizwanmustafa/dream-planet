@@ -19,6 +19,7 @@ const AboutUs = (): JSX.Element => {
 			backgroundRepeat: "no-repeat",
 			backgroundPosition: "center",
 			borderBottom: "2px solid #9c27b0",
+			padding: 20,
 		}}>
 
 			<Typography
@@ -29,7 +30,7 @@ const AboutUs = (): JSX.Element => {
 				<b>About Us</b>
 			</Typography>
 
-			<div style={{ textAlign: "center", maxWidth: 750, marginBottom: 50, }}>
+			<div style={{ textAlign: "justify", maxWidth: 750, marginBottom: 50, display: "flex", flexDirection: "column", }}>
 				<Typography
 					component="p"
 					variant="h5"
@@ -47,13 +48,16 @@ const AboutUs = (): JSX.Element => {
 					variant="h5"
 					style={{ lineHeight: "35px" }}
 				>
-					Embark on a great journey with us. A journey that will shock you. A journey that will inspire you. A journey that will change you!
+					Embark on a great journey with us.
+					A journey that will shock you.
+					A journey that will inspire you.
+					A journey that will change you!
 				</Typography>
 
 				<Button
 					variant="contained"
 					color="secondary"
-					style={{ padding: "10px 50px", marginTop: "40px" }}
+					style={{ padding: "10px 50px", marginTop: "40px", alignSelf: "center" }}
 					onClick={() => { window.scroll(0, 0); history.push("/order"); }}
 				>
 					Book a ticket!

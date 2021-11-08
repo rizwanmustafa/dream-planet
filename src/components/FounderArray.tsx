@@ -2,6 +2,7 @@ import Typography from "@material-ui/core/Typography";
 
 interface Props {
 	founders: Founder[];
+	tabletMode: boolean;
 }
 
 interface Founder {
@@ -43,7 +44,7 @@ const FounderArray = (props: Props): JSX.Element => {
 			>
 				<b>Founders</b>
 			</Typography>
-			<div style={{ display: "flex", justifyContent: "center" }}>
+			<div style={{ display: "flex", alignItems: "center", justifyContent: "center", flexDirection: props.tabletMode ? "column" : "row", }}>
 				{founderElements}
 			</div >
 
