@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import Button from "@material-ui/core/Button";
@@ -12,10 +12,22 @@ interface Props {
 
 const BookTicket = (props: Props): JSX.Element => {
 	const [message, setMessage] = useState<string>("");
-	const [confirmOrder, setConfirmOrder] = useState<boolean>(true);
+	const [confirmOrder, setConfirmOrder] = useState<boolean>(false);
+
+	useEffect(() => {
+		const popup = document.querySelector("#popup") as HTMLElement
+		if (confirmOrder) {
+			popup.style.display = "block";
+			popup.style.opacity = "1";
+		}
+		else {
+			popup.style.opacity = "0";
+			setTimeout(() => popup.style.display = "none", 500)
+		}
+	}, [confirmOrder])
 
 	const orderConfirmedPopUp: JSX.Element = (
-		<div style={{
+		<div id="popup" style={{
 			position: "absolute",
 			top: "50%", left: "50%",
 			transform: "translate(-50%, -50%)",
@@ -23,7 +35,9 @@ const BookTicket = (props: Props): JSX.Element => {
 			padding: 20,
 			borderRadius: 10,
 			zIndex: 2,
-			outline: "2px solid #9c27b0"
+			outline: "2px solid #9c27b0",
+			opacity: 0,
+			transition: "opacity 0.5s ease-in-out"
 		}}>
 			<Typography
 				component="h1"
@@ -60,7 +74,7 @@ const BookTicket = (props: Props): JSX.Element => {
 				outline: "2px solid #9c27b0",
 			}}
 		>
-			{confirmOrder && orderConfirmedPopUp}
+			{orderConfirmedPopUp}
 
 			<div
 				style={{
