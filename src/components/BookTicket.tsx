@@ -12,10 +12,43 @@ interface Props {
 
 const BookTicket = (props: Props): JSX.Element => {
 	const [message, setMessage] = useState<string>("");
+	const [confirmOrder, setConfirmOrder] = useState<boolean>(true);
+
+	const orderConfirmedPopUp: JSX.Element = (
+		<div style={{
+			position: "absolute",
+			top: "50%", left: "50%",
+			transform: "translate(-50%, -50%)",
+			backgroundColor: "black",
+			padding: 20,
+			borderRadius: 10,
+			zIndex: 2,
+			outline: "2px solid #9c27b0"
+		}}>
+			<Typography
+				component="h1"
+				variant="h4"
+				style={{ color: "#bd27d3", paddingBottom: 10, fontWeight: "bold", }}
+			>
+				Order Confirmed!
+			</Typography>
+
+			<Typography
+				style={{ "color": "white", marginBottom: 10 }}
+			>
+				Thanks for ordering!
+				Your order has been placed and an invoice has been mailed to you.
+				We hope you have a safe journey!
+			</Typography>
+
+			<Button variant="contained" color="secondary" onClick={() => setConfirmOrder(false)}>OK</Button>
+		</div>
+	);
 
 	return (
 		<form
 			style={{
+				position: "relative",
 				display: "flex",
 				flexDirection: props.tabletMode ? "column" : "row",
 				alignSelf: "center",
@@ -27,6 +60,7 @@ const BookTicket = (props: Props): JSX.Element => {
 				outline: "2px solid #9c27b0",
 			}}
 		>
+			{confirmOrder && orderConfirmedPopUp}
 
 			<div
 				style={{
@@ -45,7 +79,7 @@ const BookTicket = (props: Props): JSX.Element => {
 				<img
 					src={planetImage}
 					alt="Planet Moriz"
-					style={{ width: props.tabletMode ? "unset" : "100%", height: props.tabletMode ? "100%" : "unset", borderRadius:10}}
+					style={{ width: props.tabletMode ? "unset" : "100%", height: props.tabletMode ? "100%" : "unset", borderRadius: 10 }}
 				/>
 			</div>
 
@@ -60,9 +94,9 @@ const BookTicket = (props: Props): JSX.Element => {
 				<Typography
 					component="h1"
 					variant="h4"
-					style={{ color: "#bd27d3", paddingBottom: 10 }}
+					style={{ color: "#bd27d3", paddingBottom: 10, fontWeight: "bold", }}
 				>
-					<b>Book a ticket to Moriz now!</b>
+					Book a ticket to Moriz now!
 				</Typography>
 
 				<Typography color="secondary" style={{ paddingBottom: 50 }}>1 Ticket Price is  $1,250,000</Typography>
@@ -112,8 +146,10 @@ const BookTicket = (props: Props): JSX.Element => {
 						else if ((document.querySelector("#noOfTicketsInput") as HTMLInputElement)?.value.trim() === ""
 							|| Number((document.querySelector("#noOfTicketsInput") as HTMLInputElement)?.value) <= 0)
 							setMessage("Please enter a valid number of tickets!")
-						else
-							setMessage("An invoice has been mailed to you! Thanks for your order!")
+						else {
+							setMessage("");
+							setConfirmOrder(true);
+						}
 
 					}}
 				>
