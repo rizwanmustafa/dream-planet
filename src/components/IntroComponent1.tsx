@@ -34,8 +34,9 @@ const IntroComponent1 = (props: Props): JSX.Element => {
 				width: props.tabletMode ? "100%" : "unset",
 			}} {...{"data-aos":"zoom-in"}}>
 
-				<Typography component="h1" variant="h2" style={{ maxWidth: 750, fontWeight: "bold" }}>
-					Head out to <span style={{ color: "#9c27b0" }}>Moriz</span> now!
+				<Typography component="h1" variant="h2" style={{ maxWidth: 800, fontWeight: "bold" }}>
+					Bored with regular vactions?
+					Head out to <span style={{ color: "#9c27b0" }}>Planet 	Moriz</span> now!
 				</Typography>
 				<Button
 					color="secondary"
