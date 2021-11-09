@@ -32,7 +32,7 @@ const IntroComponent1 = (props: Props): JSX.Element => {
 				transform: "translate(-50%, -50%)",
 
 				width: props.tabletMode ? "100%" : "unset",
-			}}>
+			}} {...{"data-aos":"zoom-in"}}>
 
 				<Typography component="h1" variant="h2" style={{ maxWidth: 750, fontWeight: "bold" }}>
 					Head out to <span style={{ color: "#9c27b0" }}>Moriz</span> now!

@@ -36,7 +36,7 @@ const FounderArray = (props: Props): JSX.Element => {
 	})
 
 	return (
-		<div>
+		<div {...{"data-aos":"zoom-in"}}>
 			<Typography
 				component="h1"
 				variant="h2"

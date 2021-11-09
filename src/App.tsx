@@ -35,10 +35,17 @@ import fallImage from "./images/Fall.png";
 // For media queries
 import { useState, useEffect } from "react";
 import CopyrightStrip from "./components/CopyrightStrip";
-import ClassicHeading from "./components/ClassicHeading";
+
+//Animation on Scroll
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 
 const App = () => {
+	// Initialize AOS 
+	AOS.init({ duration: 1300 });
+
 	// Initially set the mobile mode and update mobile mode status everytime the screen size changes
 	const [mobileMode, setMobileMode] = useState<boolean>(window.matchMedia("(max-width: 425px)").matches)
 	window.matchMedia("(max-width: 425px)").addEventListener("change", e => setMobileMode(e.matches))
@@ -112,6 +119,7 @@ const App = () => {
 						component="h1"
 						color="secondary"
 						style={{ textAlign: "center", margin: "30px 0", fontWeight: "bold" }}
+						{...{ "data-aos": "zoom-in" }}
 					>Native Species of Moriz</Typography>
 
 					<SpecieDescription
@@ -160,14 +168,14 @@ const App = () => {
 						width: "75vw",
 						borderRadius: 10,
 						outline: "2px solid #9c27b0"
-					}}>
+					}} {...{ "data-aos": "zoom-in" }}>
 						<Typography
 							variant="h2"
 							component="h1"
 							color="secondary"
 							style={{ textAlign: "center", marginBottom: 30, fontWeight: "bold" }}
 						>Discovery of Moriz</Typography>
-						<div style={{ display: "flex", flexDirection: tabletMode ? "column" : "row" }}>
+						<div style={{ display: "flex", flexDirection: tabletMode ? "column" : "row" }} >
 
 							<Typography
 								style={{
@@ -204,7 +212,7 @@ const App = () => {
 						width: "75vw",
 						borderRadius: 10,
 						outline: "2px solid #9c27b0"
-					}}>
+					}} {...{ "data-aos": "zoom-in" }}>
 						<Typography
 							variant="h2"
 							component="h1"
@@ -267,6 +275,7 @@ const App = () => {
 							component="h1"
 							color="secondary"
 							style={{ textAlign: "center", margin: "30px 0", fontWeight: "bold" }}
+							{...{ "data-aos": "zoom-in" }}
 						>Fabulous Features of Moriz</Typography>
 
 						<ListParagraph
@@ -323,6 +332,7 @@ const App = () => {
 						component="h1"
 						color="secondary"
 						style={{ textAlign: "center", margin: "30px 0", fontWeight: "bold" }}
+						{...{ "data-aos": "zoom-in" }}
 					>Tourist Attractions </Typography>
 
 					<HeadingParagraphWithPicture

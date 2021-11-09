@@ -73,6 +73,7 @@ const BookTicket = (props: Props): JSX.Element => {
 				borderRadius: "5px",
 				outline: "2px solid #9c27b0",
 			}}
+			{...{"data-aos":"zoom-in"}}
 		>
 			{orderConfirmedPopUp}
 

@@ -20,12 +20,13 @@ const AboutUs = (): JSX.Element => {
 			backgroundPosition: "center",
 			borderBottom: "2px solid #9c27b0",
 			padding: 20,
-		}}>
+		}} >
 
 			<Typography
 				component="h1"
 				variant="h2"
 				style={{ textAlign: "center", marginBottom: 30, marginTop: 50 }}
+				{...{ "data-aos": "zoom-in" }}
 			>
 				<b>About Us</b>
 			</Typography>
@@ -35,6 +36,7 @@ const AboutUs = (): JSX.Element => {
 					component="p"
 					variant="h5"
 					style={{ lineHeight: "35px" }}
+					{...{ "data-aos": "zoom-in" }}
 				>
 					<span style={{ color: "#bd27d3", fontWeight: "bold" }}>Aurora Cosmics</span> is an aerospace travel compnay that is working hard towards providing everyone with quality tourism that is affordable.
 					We operate not just on Earth but on several other planets including Moriz, Jupiter and Venus.
@@ -47,6 +49,7 @@ const AboutUs = (): JSX.Element => {
 					component="p"
 					variant="h5"
 					style={{ lineHeight: "35px" }}
+					{...{ "data-aos": "zoom-in" }}
 				>
 					Embark on a great journey with us.
 					A journey that will shock you.
@@ -58,7 +61,8 @@ const AboutUs = (): JSX.Element => {
 					variant="contained"
 					color="secondary"
 					style={{ padding: "10px 50px", marginTop: "40px", alignSelf: "center" }}
-					onClick={() => {   history.push("/order") }}
+					onClick={() => { history.push("/order") }}
+					{...{ "data-aos": "zoom-in" }}
 				>
 					Book a ticket!
 				</Button>

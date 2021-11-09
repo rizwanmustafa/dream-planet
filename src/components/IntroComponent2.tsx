@@ -48,7 +48,7 @@ const IntroComponent2 = (props: Props) => {
 			margin: "50px 10px",
 			color: "white",
 		}}>
-			<div style={parentDivStyles as CSSProperties}>
+			<div style={parentDivStyles as CSSProperties} {...{ "data-aos": "zoom-in" }}>
 				<div style={textDivStyles as React.CSSProperties}>
 					<Typography variant="h2" component="h2" color="secondary" style={{ fontWeight: "bold" }}>Moriz</Typography>
 					<p style={
@@ -73,19 +73,19 @@ const IntroComponent2 = (props: Props) => {
 			<div style={{
 				display: "flex",
 				flexDirection: props.tabletMode ? "column" : "row"
-			}}>
+			}} {...{"data-aos":"zoom-in"}}>
 				<Button
 					color="secondary"
 					variant="contained"
 					style={buttonStyles}
-					onClick={() => {   history.push("/discovery"); }}
+					onClick={() => { history.push("/discovery"); }}
 				>Read about its Discovery</Button>
 
 				<Button
 					color="secondary"
 					variant="contained"
 					style={buttonStyles}
-					onClick={() => {   history.push("/features"); }}
+					onClick={() => { history.push("/features"); }}
 				>Read about its Features</Button>
 
 
@@ -93,7 +93,7 @@ const IntroComponent2 = (props: Props) => {
 					color="secondary"
 					variant="contained"
 					style={buttonStyles}
-					onClick={() => {   history.push("/species"); }}
+					onClick={() => { history.push("/species"); }}
 				>
 					Read about Native Species
 				</Button>
@@ -105,7 +105,7 @@ const IntroComponent2 = (props: Props) => {
 				alignItems: "center",
 				flexDirection: "column",
 				maxWidth: 1220
-			}}>
+			}} {...{"data-aos":"zoom-in"}}>
 				<Typography
 					color="secondary"
 					component="h2"
