@@ -51,6 +51,21 @@ const App = () => {
 
 	useEffect(() => {
 		window.scroll({ top: 0, behavior: "smooth" })
+
+		if (currentLocation.pathname === "/")
+			document.title = "Travel to Planet Moriz | Aurora Cosmics"
+		else if (currentLocation.pathname === "/discovery")
+			document.title = "Discovery of Planet Moriz | Aurora Cosmics"
+		else if (currentLocation.pathname === "/features")
+			document.title = "Features of Planet Moriz | Aurora Cosmics"
+		else if (currentLocation.pathname === "/species")
+			document.title = "Native Species of Planet Moriz | Aurora Cosmics"
+		else if (currentLocation.pathname === "/tourist_attractions")
+			document.title = "Tourist Attractions on Planet Moriz | Aurora Cosmics"
+		else if (currentLocation.pathname === "/order")
+			document.title = "Order a ticket to Planet Moriz | Aurora Cosmics"
+		else if (currentLocation.pathname === "/aboutus")
+			document.title = "About Us | Aurora Cosmics"
 	}, [currentLocation.pathname])
 
 	return (
