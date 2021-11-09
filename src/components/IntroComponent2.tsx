@@ -78,14 +78,14 @@ const IntroComponent2 = (props: Props) => {
 					color="secondary"
 					variant="contained"
 					style={buttonStyles}
-					onClick={() => { window.scroll(0, 0); history.push("/discovery_and_features"); }}
+					onClick={() => {   history.push("/discovery_and_features"); }}
 				>Read about its Discovery and Features</Button>
 
 				<Button
 					color="secondary"
 					variant="contained"
 					style={buttonStyles}
-					onClick={() => { window.scroll(0, 0); history.push("/species"); }}
+					onClick={() => {   history.push("/species"); }}
 				>
 					Read about Native Species
 				</Button>

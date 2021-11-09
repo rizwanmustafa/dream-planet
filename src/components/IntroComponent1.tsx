@@ -39,7 +39,7 @@ const IntroComponent1 = (props: Props): JSX.Element => {
 					color="secondary"
 					variant="contained"
 					style={{ padding: "10px 50px", marginTop: "40px", }}
-					onClick={() => { window.scroll(0, 0); history.push("/order"); }}
+					onClick={() => {   history.push("/order"); }}
 				>
 					Book a ticket!
 				</Button>

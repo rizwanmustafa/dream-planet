@@ -8,7 +8,7 @@ import AboutUs from "./components/AboutUs";
 import FounderArray from "./components/FounderArray";
 
 
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 
 
 import "./styles/styles.css";
@@ -30,7 +30,7 @@ import valeImage from "./images/vale.png";
 import fallImage from "./images/Fall.png";
 
 // For media queries
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import CopyrightStrip from "./components/CopyrightStrip";
 
 
@@ -43,8 +43,14 @@ const App = () => {
 	const [tabletMode, setTabletMode] = useState<boolean>(window.matchMedia("(max-width: 768px)").matches)
 	window.matchMedia("(max-width: 768px)").addEventListener("change", e => setTabletMode(e.matches))
 
+	const currentLocation = useLocation();
+
+	useEffect(() => {
+		window.scroll({ top: 0, behavior: "smooth" })
+	}, [currentLocation.pathname])
+
 	return (
-		<Router>
+		<>
 			<MenuBar />
 			<div style={{ paddingTop: 65, backgroundColor: "#9c27b0" }}></div>
 			<Switch>
@@ -269,7 +275,7 @@ const App = () => {
 
 			</Switch >
 			<CopyrightStrip tabletMode={tabletMode} />
-		</Router>
+		</>
 	)
 }
 
