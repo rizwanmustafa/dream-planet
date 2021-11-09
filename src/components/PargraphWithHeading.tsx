@@ -15,9 +15,9 @@ const ParagraphWithHeading = (props: Props): JSX.Element => {
 			width: "90%",
 			outline: "2px solid #9c27b0",
 			borderRadius: 10,
-			textAlign: props.tabletMode ? "center" : "left",
+			textAlign: props.tabletMode ? "justify" : "left",
 		}}>
-			<Typography color="secondary" component="h3" variant="h4" >{props.heading}</Typography>
+			<Typography color="secondary" component="h3" variant="h4" style={{ textAlign: props.tabletMode ? "center" : "left" }}>{props.heading}</Typography>
 			<Typography component="p" style={{ paddingTop: 10, fontSize: 18, lineHeight: "30px" }}>{props.body}</Typography>
 		</div>
 	);

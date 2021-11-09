@@ -20,7 +20,7 @@ const IntroComponent1 = (props: Props): JSX.Element => {
 			color: "white",
 			borderBottom: "1px solid #9c27b0",
 		}}>
-			<video style={{ width: "100%", height: "100%", objectFit: 'cover' }} autoPlay={true} loop={true} >
+			<video style={{ width: "100%", height: "100%", objectFit: 'cover' }} autoPlay loop muted>
 				<source src={liveBG} type="video/mp4" />
 			</video>
 

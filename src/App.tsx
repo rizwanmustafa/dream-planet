@@ -133,7 +133,7 @@ const App = () => {
 					/>
 				</Route>
 
-				<Route path="/discovery_and_features" exact>
+				<Route path="/discovery" exact>
 					<div style={{
 						alignSelf: "center",
 						display: "flex",
@@ -176,6 +176,9 @@ const App = () => {
 							</div>
 						</div>
 					</div>
+				</Route>
+
+				<Route path="/features" exact>
 
 					<div style={{
 						display: "flex",
