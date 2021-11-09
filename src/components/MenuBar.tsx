@@ -55,10 +55,12 @@ const MenuBar = (): JSX.Element => {
 
 		const menu = document.querySelector("#menu") as HTMLElement;
 		if (showMenu) {
+			menu.style.display = "flex";
 			menu.style.maxHeight = menu.scrollHeight + "px";
 			menu.style.border = "2px solid #9c27b0"
 		}
 		else {
+			menu.style.display = "none";
 			menu.style.maxHeight = "0";
 			menu.style.border = "0px solid #9c27b0";
 		}

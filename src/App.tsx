@@ -20,7 +20,7 @@ import HeadingParagraphWithPicture from "./components/HeadingParagraphWithPictur
 // Discovery Images
 import supernova from "./images/supernova.png"
 import spacesuit from "./images/spacesuit.png";
-import spacecraft from "./images/spacecraft.png";
+import spaceship from "./images/spacecraft.png";
 // Founder Images
 import rizwanImage from "./images/rizwan.jpg";
 import mohidImage from "./images/mohid.jpg";
@@ -173,6 +173,58 @@ const App = () => {
 
 							<div style={{ width: tabletMode ? "100%" : "40%" }}>
 								<img src={supernova} style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: 10, }} alt="Supernova" />
+							</div>
+						</div>
+					</div>
+
+					<div style={{
+						alignSelf: "center",
+						display: "flex",
+						flexDirection: "column",
+						backgroundColor: "transparent",
+						color: "white",
+						marginTop: 30,
+						marginBottom: 30,
+						padding: 30,
+						width: "75vw",
+						borderRadius: 10,
+						outline: "2px solid #9c27b0"
+					}}>
+						<Typography
+							variant="h2"
+							component="h1"
+							color="secondary"
+							style={{ textAlign: "center", marginBottom: 30, fontWeight: "bold" }}
+						>First Expedition to Moriz</Typography>
+						<div style={{ display: "flex", flexDirection: "column" }} >
+
+							<Typography
+								style={{
+									alignSelf: "center",
+									textAlign: "justify",
+									fontSize: 23,
+									lineHeight: "35px",
+
+								}}>
+								The first expedition was sent to Moriz 2 years after its discovery.
+								Special care was taken by the scientists and engineers while creating the necessary equipments to prevent any harm.
+								A group of 23 volunteers from all over the world was sent with special instructions.
+								Their expedition was livestreamed to Youtube which billions of people watched.
+								The first person to land their footstep on the planet was Ayesha Karim.
+								Below is the equipment used by the volunteers during the expedition:
+							</Typography>
+
+							<div style={{ padding: 20, display: "flex", alignItems: "center", flexDirection: tabletMode ? "column" : "row", }}>
+
+								<div style={{ width: tabletMode ? "100%" : "50%" }} >
+									<img src={spaceship} alt="Spaceship used by the volunteers during the expedition" style={{ width: "100%", borderRadius: 10, backgroundColor: '#7a7a7a' }} />
+									<Typography style={{ textAlign: "center", marginTop: 10, marginBottom: "30px", fontSize: "18px" }} color="secondary">Spaceship used by the volunteers during the expedition</Typography>
+								</div>
+
+								<div style={{ width: tabletMode ? "100%" : "50%" }} >
+									<img src={spacesuit} alt="Spacesuit used by the volunteers during the expedition" style={{ width: "100%", borderRadius: 10, }} />
+									<Typography style={{ textAlign: "center", marginTop: 10, marginBottom: "30px", fontSize: "18px" }} color="secondary" >Spacesuit used by the volunteers during the expedition</Typography>
+								</div>
 							</div>
 						</div>
 					</div>
