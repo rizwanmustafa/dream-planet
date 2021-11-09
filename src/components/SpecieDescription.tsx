@@ -5,7 +5,6 @@ interface Props {
 	type: string;
 	description: string;
 	photo: any;
-	attribution?: JSX.Element;
 	tabletMode: boolean;
 }
 
@@ -27,10 +26,6 @@ const SpecieDescription = (props: Props): JSX.Element => {
 				<Typography color="secondary" component="h3" variant="h4" style={{ textAlign: props.tabletMode ? "center" : "left", }}><b>{props.name}</b></Typography>
 				<Typography component="p" style={{ fontSize: 20, textAlign: props.tabletMode ? "center" : "left", }}>Type: {props.type}</Typography>
 				<Typography component="p" style={{ fontSize: 20, marginTop: 20, textAlign: props.tabletMode ? "justify" : "left", }}>{props.description}</Typography>
-
-				{props.attribution === undefined ||
-					<Typography component="p" style={{ paddingTop: 10, textAlign: props.tabletMode ? "center" : "left" }}>{props.attribution}</Typography>
-				}
 
 			</div>
 

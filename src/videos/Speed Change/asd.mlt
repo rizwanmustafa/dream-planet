@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mlt LC_NUMERIC="C" version="7.2.0" root="/home/rizwan" title="asd.mp4">
+  <profile description="HD 1080p 25 fps" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" frame_rate_den="1" colorspace="709"/>
+  <producer id="producer0" in="0" out="399">
+    <property name="length">400</property>
+    <property name="eof">pause</property>
+    <property name="resource">-1:/mnt/Active/DreamPlanet/dream-planet/src/videos/asd.mp4</property>
+    <property name="aspect_ratio">1</property>
+    <property name="meta.media.nb_streams">1</property>
+    <property name="meta.media.0.stream.type">video</property>
+    <property name="meta.media.0.stream.frame_rate">25</property>
+    <property name="meta.media.0.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.width">1920</property>
+    <property name="meta.media.0.codec.height">1080</property>
+    <property name="meta.media.0.codec.rotate">0</property>
+    <property name="meta.media.0.codec.pix_fmt">yuv420p</property>
+    <property name="meta.media.0.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.0.codec.colorspace">709</property>
+    <property name="meta.media.0.codec.color_trc">1</property>
+    <property name="meta.media.0.codec.name">h264</property>
+    <property name="meta.media.0.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+    <property name="meta.media.0.codec.bit_rate">3828872</property>
+    <property name="meta.attr.0.stream.creation_time.markup">2019-01-30T06:46:06.000000Z</property>
+    <property name="meta.attr.0.stream.handler_name.markup">L-SMASH Video Handler</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.0.stream.encoder.markup">AVC Coding</property>
+    <property name="meta.attr.major_brand.markup">mp42</property>
+    <property name="meta.attr.minor_version.markup">0</property>
+    <property name="meta.attr.compatible_brands.markup">mp42mp41isomavc1</property>
+    <property name="meta.attr.creation_time.markup">2019-01-30T06:46:06.000000Z</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">-1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">1</property>
+    <property name="warp_speed">-1</property>
+    <property name="warp_resource">/mnt/Active/DreamPlanet/dream-planet/src/videos/asd.mp4</property>
+    <property name="mlt_service">timewarp</property>
+    <property name="warp_pitch">1</property>
+  </producer>
+  <playlist id="playlist0">
+    <entry producer="producer0" in="0" out="399"/>
+  </playlist>
+  <tractor id="tractor0" title="asd.mp4" in="0" out="399">
+    <track producer="playlist0"/>
+  </tractor>
+</mlt>

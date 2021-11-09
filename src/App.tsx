@@ -17,21 +17,25 @@ import ParagraphWithHeading from "./components/PargraphWithHeading";
 import ListParagraph from "./components/ListParagraph";
 import HeadingParagraphWithPicture from "./components/HeadingParagraphWithPicture";
 
-
-// Images
-// import supernova from "./images/supernova.webp";
+// Discovery Images
 import supernova from "./images/supernova.png"
+import spacesuit from "./images/spacesuit.png";
+import spacecraft from "./images/spacecraft.png";
+// Founder Images
 import rizwanImage from "./images/rizwan.jpg";
-import checkImage from "./images/check.jpeg";
+import mohidImage from "./images/mohid.jpg";
+// Species Images
 import bonsarTree from "./images/bonsar-tree.png";
 import electrarTree from "./images/ElectrarTree.png";
 import ramosar from "./images/ramosar.png"
+// Tourist Attraction Images
 import valeImage from "./images/vale.png";
 import fallImage from "./images/Fall.png";
 
 // For media queries
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import CopyrightStrip from "./components/CopyrightStrip";
+import ClassicHeading from "./components/ClassicHeading";
 
 
 const App = () => {
@@ -72,7 +76,7 @@ const App = () => {
 						founders={[
 							{
 								founderName: "Mohid Raza",
-								founderImage: checkImage,
+								founderImage: mohidImage,
 							},
 							{
 								founderName: "Rizwan Mustafa",
@@ -124,9 +128,6 @@ const App = () => {
 					However, there is no need to panic.
 					Ramosar may look frightening but scientists have discovered that they are way weaker than humans, physically and mentally.
 					Scientists have also deduced that while the explosion took place, Ramosars were actually fighting each other which indicates the possibility of a civil war."
-						attribution={
-							<>Image by <a href='https://pixabay.com/users/anaterate-2348028/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3317701'>Wolfgang Eckert</a> from <a href='https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3317701'>Pixabay</a></>
-						}
 						photo={ramosar}
 						tabletMode={tabletMode}
 					/>
@@ -247,6 +248,13 @@ const App = () => {
 				</Route>
 
 				<Route path="/tourist_attractions" exact>
+					<Typography
+						variant="h2"
+						component="h1"
+						color="secondary"
+						style={{ textAlign: "center", margin: "30px 0", fontWeight: "bold" }}
+					>Tourist Attractions </Typography>
+
 					<HeadingParagraphWithPicture
 						heading="Vale of Volcanoes"
 						body="

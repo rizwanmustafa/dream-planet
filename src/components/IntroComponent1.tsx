@@ -2,7 +2,7 @@ import { useHistory } from "react-router-dom";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 
-import planetHorizon from "../images/planet-horizon.png";
+import liveBG from "../videos/live_background.mp4";
 
 interface Props {
 	mobileMode: boolean;
@@ -20,7 +20,9 @@ const IntroComponent1 = (props: Props): JSX.Element => {
 			color: "white",
 			borderBottom: "1px solid #9c27b0",
 		}}>
-			<img src={planetHorizon} alt="" style={{ width: "100%", height: "100%", objectFit: 'cover' }} />
+			<video style={{ width: "100%", height: "100%", objectFit: 'cover' }} autoPlay={true} loop={true} >
+				<source src={liveBG} type="video/mp4" />
+			</video>
 
 			<div style={{
 				position: "absolute",
@@ -39,7 +41,7 @@ const IntroComponent1 = (props: Props): JSX.Element => {
 					color="secondary"
 					variant="contained"
 					style={{ padding: "10px 50px", marginTop: "40px", }}
-					onClick={() => {   history.push("/order"); }}
+					onClick={() => { history.push("/order"); }}
 				>
 					Book a ticket!
 				</Button>
