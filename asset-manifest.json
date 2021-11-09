@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dream-planet/static/css/main.d410869a.chunk.css",
-    "main.js": "/dream-planet/static/js/main.31046733.chunk.js",
-    "main.js.map": "/dream-planet/static/js/main.31046733.chunk.js.map",
+    "main.js": "/dream-planet/static/js/main.7230ebab.chunk.js",
+    "main.js.map": "/dream-planet/static/js/main.7230ebab.chunk.js.map",
     "runtime-main.js": "/dream-planet/static/js/runtime-main.a5afa9d9.js",
     "runtime-main.js.map": "/dream-planet/static/js/runtime-main.a5afa9d9.js.map",
     "static/js/2.27c19bd8.chunk.js": "/dream-planet/static/js/2.27c19bd8.chunk.js",
@@ -22,6 +22,8 @@
     "static/media/ramosar.81bfa552.png": "/dream-planet/static/media/ramosar.81bfa552.png",
     "static/media/rizwan.ac082c35.jpg": "/dream-planet/static/media/rizwan.ac082c35.jpg",
     "static/media/solar-system.df780773.png": "/dream-planet/static/media/solar-system.df780773.png",
+    "static/media/spacecraft.2c732c9e.png": "/dream-planet/static/media/spacecraft.2c732c9e.png",
+    "static/media/spacesuit.2c2e2783.png": "/dream-planet/static/media/spacesuit.2c2e2783.png",
     "static/media/supernova.6bd6e578.png": "/dream-planet/static/media/supernova.6bd6e578.png",
     "static/media/vale.e5ba3fa7.png": "/dream-planet/static/media/vale.e5ba3fa7.png"
   },
@@ -29,6 +31,6 @@
     "static/js/runtime-main.a5afa9d9.js",
     "static/js/2.27c19bd8.chunk.js",
     "static/css/main.d410869a.chunk.css",
-    "static/js/main.31046733.chunk.js"
+    "static/js/main.7230ebab.chunk.js"
   ]
 }
