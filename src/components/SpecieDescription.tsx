@@ -19,9 +19,10 @@ const SpecieDescription = (props: Props): JSX.Element => {
 			borderRadius: 10,
 			width: props.tabletMode ? "unset" : "75%",
 			alignSelf: "center",
+			alignItems: "center",
 			color: "white",
 			outline: "2px solid #9c27b0"
-		}} {...{"data-aos":"zoom-in"}}>
+		}} {...{ "data-aos": "zoom-in" }}>
 			<div style={{ width: props.tabletMode ? "unset" : "70%", padding: 20 }}>
 				<Typography color="secondary" component="h3" variant="h4" style={{ textAlign: props.tabletMode ? "center" : "left", }}><b>{props.name}</b></Typography>
 				<Typography component="p" style={{ fontSize: 20, textAlign: props.tabletMode ? "center" : "left", }}>Type: {props.type}</Typography>

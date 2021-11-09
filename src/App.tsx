@@ -26,7 +26,7 @@ import rizwanImage from "./images/rizwan.jpg";
 import mohidImage from "./images/mohid.jpg";
 // Species Images
 import bonsarTree from "./images/bonsar-tree.png";
-import electrarTree from "./images/ElectrarTree.png";
+import pinarTree from "./images/pinar.jpg";
 import ramosar from "./images/ramosar.png"
 // Tourist Attraction Images
 import valeImage from "./images/vale.png";
@@ -134,12 +134,15 @@ const App = () => {
 					/>
 
 					<SpecieDescription
-						name="Electrar Trees"
+						name="Pinar Trees"
 						type="Plant"
-						description="Electrar trees may look like something out of a sci-fi movie, but they are a reality.
-					Scientists have deduced that the electrar trees only produced light before the supernova explosion but now they also produce electricity, thanks to a mutation in their DNA due to the explosion.
-					Their black part is what performs photosynthesis and it absorbs 100% of the energy provided by sun which means it is extremely efficient."
-						photo={electrarTree}
+						description="Pinar Trees are a genetically modified version of the pine trees on Earth.
+						They are the first species which successfully grew on Planet Moriz after they were genetically modified.
+						Apart from their beautiful looks, they also help fertilize the soil.
+						Scientists are hoping to use the experience gained by modifying pine trees to create pinar trees will help them in genetically modifying other plants.
+						It is expected that all plant species on Earth will have been modified to grow on Planet Moriz by 2068.
+						"
+						photo={pinarTree}
 						tabletMode={tabletMode}
 					/>
 
