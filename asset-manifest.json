@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dream-planet/static/css/main.d410869a.chunk.css",
-    "main.js": "/dream-planet/static/js/main.4d54bfa2.chunk.js",
-    "main.js.map": "/dream-planet/static/js/main.4d54bfa2.chunk.js.map",
+    "main.js": "/dream-planet/static/js/main.f88e6fff.chunk.js",
+    "main.js.map": "/dream-planet/static/js/main.f88e6fff.chunk.js.map",
     "runtime-main.js": "/dream-planet/static/js/runtime-main.a5afa9d9.js",
     "runtime-main.js.map": "/dream-planet/static/js/runtime-main.a5afa9d9.js.map",
     "static/js/2.9bbfd290.chunk.js": "/dream-planet/static/js/2.9bbfd290.chunk.js",
@@ -14,13 +14,13 @@
     "static/media/Fall.55c219b1.png": "/dream-planet/static/media/Fall.55c219b1.png",
     "static/media/about-us-bg.8dfc2bc7.jpeg": "/dream-planet/static/media/about-us-bg.8dfc2bc7.jpeg",
     "static/media/bonsar-tree.44f70709.png": "/dream-planet/static/media/bonsar-tree.44f70709.png",
-    "static/media/check.8dfc2bc7.jpeg": "/dream-planet/static/media/check.8dfc2bc7.jpeg",
     "static/media/for-ticket-page.576f93bc.png": "/dream-planet/static/media/for-ticket-page.576f93bc.png",
+    "static/media/live_background.c148a755.mp4": "/dream-planet/static/media/live_background.c148a755.mp4",
     "static/media/logo.b3e19427.png": "/dream-planet/static/media/logo.b3e19427.png",
-    "static/media/planet-horizon.72d661e6.png": "/dream-planet/static/media/planet-horizon.72d661e6.png",
+    "static/media/mohid.05c8ca1d.jpg": "/dream-planet/static/media/mohid.05c8ca1d.jpg",
     "static/media/planet-image-new.b18a436e.png": "/dream-planet/static/media/planet-image-new.b18a436e.png",
     "static/media/ramosar.81bfa552.png": "/dream-planet/static/media/ramosar.81bfa552.png",
-    "static/media/rizwan.08b1c29c.jpg": "/dream-planet/static/media/rizwan.08b1c29c.jpg",
+    "static/media/rizwan.ac082c35.jpg": "/dream-planet/static/media/rizwan.ac082c35.jpg",
     "static/media/solar-system.df780773.png": "/dream-planet/static/media/solar-system.df780773.png",
     "static/media/supernova.6bd6e578.png": "/dream-planet/static/media/supernova.6bd6e578.png",
     "static/media/vale.e5ba3fa7.png": "/dream-planet/static/media/vale.e5ba3fa7.png"
@@ -29,6 +29,6 @@
     "static/js/runtime-main.a5afa9d9.js",
     "static/js/2.9bbfd290.chunk.js",
     "static/css/main.d410869a.chunk.css",
-    "static/js/main.4d54bfa2.chunk.js"
+    "static/js/main.f88e6fff.chunk.js"
   ]
 }
