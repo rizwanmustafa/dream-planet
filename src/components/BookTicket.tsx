@@ -17,12 +17,12 @@ const BookTicket = (props: Props): JSX.Element => {
 	useEffect(() => {
 		const popup = document.querySelector("#popup") as HTMLElement
 		if (confirmOrder) {
-			popup.style.display = "block";
+			popup.style.visibility = "visible";
 			popup.style.opacity = "1";
 		}
 		else {
 			popup.style.opacity = "0";
-			setTimeout(() => popup.style.display = "none", 500)
+			setTimeout(() => popup.style.visibility = "hidden", 500);
 		}
 	}, [confirmOrder])
 
