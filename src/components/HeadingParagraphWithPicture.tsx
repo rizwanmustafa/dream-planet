@@ -31,8 +31,9 @@ const HeadingParagraphWithPicture = (props: Props): JSX.Element => {
 					width: "100%",
 					height: "100%",
 					objectFit: "cover",
-					borderRadius: props.tabletMode ? 10 : 0,
 					borderTopRightRadius: 10,
+					borderTopLeftRadius: props.tabletMode?10:0,
+					borderBottomLeftRadius: props.tabletMode?10:0,
 					borderBottomRightRadius: 10,
 				}} />
 			</div>

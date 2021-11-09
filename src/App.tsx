@@ -31,6 +31,9 @@ import ramosar from "./images/ramosar.png"
 // Tourist Attraction Images
 import valeImage from "./images/vale.png";
 import fallImage from "./images/Fall.png";
+//Feature Images
+import soil from "./images/soil.png";
+import forest from "./images/forest.jpg";
 
 // For media queries
 import { useState, useEffect } from "react";
@@ -39,6 +42,7 @@ import CopyrightStrip from "./components/CopyrightStrip";
 //Animation on Scroll
 import AOS from "aos";
 import "aos/dist/aos.css";
+import FeatureWithPhoto from "./components/FeatureWithPhoto";
 
 
 
@@ -308,23 +312,25 @@ const App = () => {
 							tabletMode={tabletMode}
 						/>
 
-						<ParagraphWithHeading
+						<FeatureWithPhoto
 							heading="Mostly covered by Trees"
-							body="The surface of Planet Moriz is mostly covered by the trees of Bonsar and Electrar.
+							description="The surface of Planet Moriz is mostly covered by the trees of Bonsar and Electrar.
 						They can be found nearly everywhere.
 						After analyzing, scientists have said that 50.1% of the Planet Moriz's surface is covered by Bonsar Trees and 30.3% is covered by the Electrar Trees.
 						Scientists are hoping to use the bonsar trees for extensive agriculture and satisfying the food requirements of the population on Earth.
 						Electrar Trees on the other hand will be used to generate and store electricity.
 						The electricity will then be provided to the future population and industries of Planet Moriz."
 							tabletMode={tabletMode}
+							photo={forest}
 						/>
 
-						<ParagraphWithHeading
+						<FeatureWithPhoto
 							heading="Extremely fertile soil"
-							body="It has been discovered that the soil of Planet Moriz is extremely fertile and the reason for this is a newly discovered element 'Wanza'.
+							description="It has been discovered that the soil of Planet Moriz is extremely fertile and the reason for this is a newly discovered element 'Wanza'.
 						This mystical element speeds up the growing process of every plant by up to 20 times and allows them to grow in the soil of Planet Moriz irrespective of the seasons.
 						This is an extremely good news as this will help in satisfying the feeding needs of the human population."
 							tabletMode={tabletMode}
+							photo={soil}
 						/>
 					</div>
 				</Route>
