@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dream-planet/static/css/main.d410869a.chunk.css",
-    "main.js": "/dream-planet/static/js/main.53ef01bd.chunk.js",
-    "main.js.map": "/dream-planet/static/js/main.53ef01bd.chunk.js.map",
+    "main.js": "/dream-planet/static/js/main.d6f595a7.chunk.js",
+    "main.js.map": "/dream-planet/static/js/main.d6f595a7.chunk.js.map",
     "runtime-main.js": "/dream-planet/static/js/runtime-main.a5afa9d9.js",
     "runtime-main.js.map": "/dream-planet/static/js/runtime-main.a5afa9d9.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/dream-planet/static/css/2.7fc9bc2b.chunk.css",
@@ -36,6 +36,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.1c36011d.chunk.js",
     "static/css/main.d410869a.chunk.css",
-    "static/js/main.53ef01bd.chunk.js"
+    "static/js/main.d6f595a7.chunk.js"
   ]
 }
