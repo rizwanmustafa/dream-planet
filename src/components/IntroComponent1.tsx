@@ -16,7 +16,7 @@ const IntroComponent1 = (props: Props): JSX.Element => {
 		<div style={{
 			position: "relative",
 			width: "100%",
-			height: "500px",
+			height: "600px",
 			color: "white",
 			borderBottom: "1px solid #9c27b0",
 		}}>
