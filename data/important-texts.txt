@@ -1,0 +1,47 @@
+Company Name: Aurora Cosmics
+Company Mission:
+We are an aerospace travel company that is working hard towards providing everyone with quality tourism not just on Earth but on other planets as well. Embark on a great journey with us. A journey that will shock you. A journey that will inspire you. A journey that will change you!
+
+About Us Page Notes:
+-> Also create a button to redirect them to the book a ticket page
+
+Discovery Story:
+-> Moriz was actually part of a completely different galaxy but was sent propelling into our Milkyway by a great explosion millions of miles away from Moriz.
+-> Luckily, Moriz was able to withstand the explosion and is now orbiting Sun and is located between Mars' and Earth's orbit.
+
+Scientific facts:
+-> It is suitable for life.
+-> It is completely covered by land and water is only found deep undergeround.
+-> Moriz takes 275 days to complete its orbit.
+-> It takes 24 hours to complete a rotation cycle just like Earth.
+-> Summer stays for 9 months while winter stays only for 3 months.
+-> Average temperature at Moriz is 16 celsius.
+-> Scientists estimate that about 75% of the human population will have shifted to Moriz by 2053.
+
+
+Features
+-> No harmful bacteria or viruses can live there due to the presence of a special gas which has been named 'Rizmo' by the scientists. Scientists are currently working on bringing the magical Rizmo to Earth.
+-> Presence of Rizmo gives the planet its classic purple color
+-> Moriz is mostly inhabited by trees which look extremely similar to bonsai trees on Earth except that they absorb CO2 and release O2 20x faster.
+-> Soil composition is a bit different than Earth due to the presence of an element called 'Wanza'. This makes the soil extremely fertile and allows the plants to grow quicker than on Earth.
+-> There are no water bodies on Moriz. The only source of water is the deep underground water.
+
+Species
+
+1. Bonsar Trees
+Bonsar trees may look similar to bonsai trees present on Earth but do not underestimate them.
+They are one of the native species that survived supernova explosion.
+They absorb CO2 and release O2 20x faster than plants on Earth.
+They can also produce all fruits and vegetables available on Earth, all year round no matter what the season.
+
+2. Electrar Trees
+Electrar trees may look like something out of a sci-fi movie, but they are a reality.
+Scientists have deduced that the electrar trees only produced light before the supernova explosion but now they also produce electricity, thanks to a mutation in their DNA due to the explosion.
+Their black part is what performs photosynthesis and it absorbs 100% of the energy provided by sun which means it is extremely efficient.
+
+3. Ramosar
+Seems like alien movies were right after all.
+Ramosar is an alien spcies that unfortunately did not survive the supernova explosion.
+However, there is no need to panic.
+Ramosar may look frightening but scientists have discovered that they are way weaker than humans, physically and mentally.
+Scientists have also deduced that while the explosion took place, Ramosars were actually fighting each other which indicates the possibility of a civil war.
