@@ -123,7 +123,7 @@ const App = () => {
 						component="h1"
 						color="secondary"
 						style={{ textAlign: "center", margin: "30px 0", fontWeight: "bold" }}
-						{...{ "data-aos": "zoom-in" }}
+						{...{ "data-aos-once": "true", "data-aos": "zoom-in" }}
 					>Native Species of Moriz</Typography>
 
 					<SpecieDescription
@@ -169,13 +169,13 @@ const App = () => {
 						display: "flex",
 						flexDirection: "column",
 						backgroundColor: "transparent",
-						color: "white",
+						
 						marginTop: 30,
 						padding: 30,
 						width: "75vw",
 						borderRadius: 10,
 						outline: "2px solid #9c27b0"
-					}} {...{ "data-aos": "zoom-in" }}>
+					}} {...{ "data-aos-once": "true", "data-aos": "zoom-in" }}>
 						<Typography
 							variant="h2"
 							component="h1"
@@ -212,14 +212,14 @@ const App = () => {
 						display: "flex",
 						flexDirection: "column",
 						backgroundColor: "transparent",
-						color: "white",
+						
 						marginTop: 30,
 						marginBottom: 30,
 						padding: 30,
 						width: "75vw",
 						borderRadius: 10,
 						outline: "2px solid #9c27b0"
-					}} {...{ "data-aos": "zoom-in" }}>
+					}} {...{ "data-aos-once": "true", "data-aos": "zoom-in" }}>
 						<Typography
 							variant="h2"
 							component="h1"
@@ -268,7 +268,7 @@ const App = () => {
 						alignItems: "center",
 						flexDirection: "column",
 						backgroundColor: "transparent",
-						color: "white",
+						
 						width: "75vw",
 
 						margin: "50px 10px",
@@ -282,7 +282,7 @@ const App = () => {
 							component="h1"
 							color="secondary"
 							style={{ textAlign: "center", margin: "30px 0", fontWeight: "bold" }}
-							{...{ "data-aos": "zoom-in" }}
+							{...{ "data-aos-once": "true", "data-aos": "zoom-in" }}
 						>Fabulous Features of Moriz</Typography>
 
 						<ListParagraph
@@ -341,7 +341,7 @@ const App = () => {
 						component="h1"
 						color="secondary"
 						style={{ textAlign: "center", margin: "30px 0", fontWeight: "bold" }}
-						{...{ "data-aos": "zoom-in" }}
+						{...{ "data-aos-once": "true", "data-aos": "zoom-in" }}
 					>Tourist Attractions </Typography>
 
 					<HeadingParagraphWithPicture

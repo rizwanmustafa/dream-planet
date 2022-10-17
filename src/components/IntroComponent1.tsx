@@ -17,7 +17,7 @@ const IntroComponent1 = (props: Props): JSX.Element => {
 			position: "relative",
 			width: "100%",
 			height: "600px",
-			color: "white",
+			
 			borderBottom: "1px solid #9c27b0",
 		}}>
 			<video style={{ width: "100%", height: "100%", objectFit: 'cover' }} autoPlay loop muted>
@@ -32,11 +32,11 @@ const IntroComponent1 = (props: Props): JSX.Element => {
 				transform: "translate(-50%, -50%)",
 
 				width: props.tabletMode ? "100%" : "unset",
-			}} {...{"data-aos":"zoom-in"}}>
+			}} {...{"data-aos-once": "true", "data-aos":"zoom-in"}}>
 
-				<Typography component="h1" variant="h2" style={{ maxWidth: 800, fontWeight: "bold" }}>
+				<Typography component="h1" variant="h2" style={{ maxWidth: 800, fontWeight: "bold", color: "white" }}>
 					Bored with regular vactions?
-					Head out to <span style={{ color: "#9c27b0" }}>Planet 	Moriz</span> now!
+					Head out to <span style={{ color: "#9c27b0" }}>Planet Moriz</span> now!
 				</Typography>
 				<Button
 					color="secondary"

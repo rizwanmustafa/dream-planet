@@ -18,7 +18,7 @@ const MenuBar = (): JSX.Element => {
 		flexDirection: "column",
 
 
-		backgroundColor: "black",
+		backgroundColor: "white",
 		borderRadius: 10,
 
 		// For menu opening animation
@@ -30,8 +30,8 @@ const MenuBar = (): JSX.Element => {
 	const menuChildrenStyles: CSSProperties = {
 		padding: "15px 20px",
 		textDecoration: "none",
-		// color: "#9c27b0",
-		color: "white",
+		color: "#9c27b0",
+		// 
 		fontWeight: "bold",
 	}
 

@@ -14,13 +14,13 @@ const HeadingParagraphWithPicture = (props: Props): JSX.Element => {
 			display: "flex",
 			flexDirection: props.tabletMode ? "column" : "row",
 			backgroundColor: "transparent",
-			color: "white",
+			
 			margin: 20,
 			borderRadius: 10,
 			width: props.tabletMode ? "unset" : "75%",
 			alignSelf: "center",
 			outline: "2px solid #9c27b0",
-		}} 	{...{ "data-aos": "zoom-in" }}>
+		}} 	{...{ "data-aos-once": "true", "data-aos": "zoom-in" }}>
 			<div style={{ width: props.tabletMode ? "unset" : "60%", padding: 20 }}>
 				<ClassicHeading tabletMode={props.tabletMode}>{props.heading}</ClassicHeading>
 				<Typography style={{ fontSize: 18, lineHeight: "33px", textAlign: props.tabletMode ? "justify" : "left" }}>{props.body}</Typography>

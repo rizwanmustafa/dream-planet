@@ -13,7 +13,7 @@ const ListParagraph = (props: Props): JSX.Element => {
 				width: "90%",
 				outline: "2px solid #9c27b0",
 				borderRadius: 10,
-			}} {...{"data-aos": "zoom-in"}}>
+			}} {...{"data-aos-once": "true", "data-aos": "zoom-in"}}>
 				<Typography color="secondary" component="h3" variant="h4" style={{ textAlign: props.tabletMode ? "center" : "left" }}>{props.heading}</Typography>
 
 				<ul>

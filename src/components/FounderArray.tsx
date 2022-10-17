@@ -22,7 +22,7 @@ const FounderArray = (props: Props): JSX.Element => {
 				padding: 20,
 				width: 250,
 				borderRadius: 10,
-				color: "white",
+				
 				outline: "2px solid #9c27b0",
 			}}>
 				<img
@@ -36,11 +36,11 @@ const FounderArray = (props: Props): JSX.Element => {
 	})
 
 	return (
-		<div {...{"data-aos":"zoom-in"}}>
+		<div {...{"data-aos-once": "true", "data-aos":"zoom-in"}}>
 			<Typography
 				component="h1"
 				variant="h2"
-				style={{ textAlign: "center", marginBottom: 30, marginTop: 50, color: "white" }}
+				style={{ textAlign: "center", marginBottom: 30, marginTop: 50, color: "black" }}
 			>
 				<b>Founders</b>
 			</Typography>

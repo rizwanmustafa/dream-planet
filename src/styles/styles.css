@@ -5,7 +5,8 @@ body {
 }
 body {
   font-family: "Helvetica", "Roboto", sans-serif;
-  background-color: black;
+  background-color: white;
+  color: black;
 }
 
 #root {

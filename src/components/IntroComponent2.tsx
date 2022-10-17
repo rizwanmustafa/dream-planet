@@ -46,16 +46,16 @@ const IntroComponent2 = (props: Props) => {
 			alignItems: "center",
 			alignSelf: "center",
 			margin: "50px 10px",
-			color: "white",
+			
 		}}>
-			<div style={parentDivStyles as CSSProperties} {...{ "data-aos": "zoom-in" }}>
-				<div style={textDivStyles as React.CSSProperties}>
-					<Typography variant="h2" component="h2" color="secondary" style={{ fontWeight: "bold" }}>Moriz</Typography>
+			<div style={parentDivStyles as CSSProperties} {...{ "data-aos-once": "true", "data-aos": "zoom-in" }}>
+				<div style={{ ...textDivStyles as CSSProperties, paddingRight: !props.tabletMode ? "100px" : 0}}>
+					<Typography variant="h2" component="h2" color="secondary" style={{ fontWeight: "bold", textAlign: "center" }}>Moriz</Typography>
 					<p style={
 						{
 							lineHeight: "35px",
 							fontSize: "20px",
-							paddingRight: !props.tabletMode ? "100px" : 0,
+							// paddingRight: !props.tabletMode ? "100px" : 0,
 							textAlign: "justify",
 						}
 					}>
@@ -73,7 +73,7 @@ const IntroComponent2 = (props: Props) => {
 			<div style={{
 				display: "flex",
 				flexDirection: props.tabletMode ? "column" : "row"
-			}} {...{"data-aos":"zoom-in"}}>
+			}} {...{"data-aos-once": "true", "data-aos":"zoom-in"}}>
 				<Button
 					color="secondary"
 					variant="contained"
@@ -105,7 +105,7 @@ const IntroComponent2 = (props: Props) => {
 				alignItems: "center",
 				flexDirection: "column",
 				maxWidth: 1220
-			}} {...{"data-aos":"zoom-in"}}>
+			}} {...{"data-aos-once": "true", "data-aos":"zoom-in"}}>
 				<Typography
 					color="secondary"
 					component="h2"

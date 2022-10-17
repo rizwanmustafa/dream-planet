@@ -20,9 +20,9 @@ const FeatureWithPhoto = (props: Props): JSX.Element => {
 			width: "90%",
 			alignSelf: "center",
 			alignItems: "center",
-			color: "white",
+			
 			outline: "2px solid #9c27b0"
-		}} {...{ "data-aos": "zoom-in" }}>
+		}} {...{ "data-aos-once": "true", "data-aos": "zoom-in" }}>
 			<div style={{ width: props.tabletMode ? "unset" : "70%" }}>
 				<Typography color="secondary" component="h3" variant="h4" style={{ textAlign: props.tabletMode ? "center" : "left" }}>{props.heading}</Typography>
 				<Typography component="p" style={{ fontSize: 20, marginTop: 20, textAlign: props.tabletMode ? "justify" : "left", }}>{props.description}</Typography>

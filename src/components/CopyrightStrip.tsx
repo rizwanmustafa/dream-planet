@@ -7,7 +7,7 @@ interface Props {
 const CopyrightStrip = (props: Props): JSX.Element => {
 	return (
 		<div id="copyrightStrip" style={{
-			backgroundColor: "black",
+			backgroundColor: "#9c27b0",
 			padding: "15px",
 			color: "white",
 			textAlign: props.tabletMode ? "center" : "unset"

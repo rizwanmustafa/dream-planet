@@ -31,7 +31,7 @@ const BookTicket = (props: Props): JSX.Element => {
 			position: "absolute",
 			top: "50%", left: "50%",
 			transform: "translate(-50%, -50%)",
-			backgroundColor: "black",
+			backgroundColor: "white",
 			padding: 20,
 			borderRadius: 10,
 			zIndex: 2,
@@ -48,7 +48,7 @@ const BookTicket = (props: Props): JSX.Element => {
 			</Typography>
 
 			<Typography
-				style={{ "color": "white", marginBottom: 10 }}
+				style={{ marginBottom: 10 }}
 			>
 				Thanks for ordering!
 				Your order has been placed and an invoice has been mailed to you.
@@ -69,11 +69,11 @@ const BookTicket = (props: Props): JSX.Element => {
 				margin: "20px",
 				textAlign: "center",
 				backgroundColor: "transparent",
-				color: "white",
+				
 				borderRadius: "5px",
 				outline: "2px solid #9c27b0",
 			}}
-			{...{"data-aos":"zoom-in"}}
+			{...{"data-aos-once": "true", "data-aos":"zoom-in"}}
 		>
 			{orderConfirmedPopUp}
 
