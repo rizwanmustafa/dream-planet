@@ -25,6 +25,9 @@ const MenuBar = (): JSX.Element => {
 		maxHeight: 0,
 		overflow: "hidden",
 		transition: "max-height 0.5s ease-in-out, border 0.5s ease-in-out",
+		WebkitBoxShadow: "0px 0px 9px 3px #9c27b0",
+		MozBoxShadow: "0px 0px 9px 3px #9c27b0",
+		boxShadow: "0px 0px 9px 3px #9c27b0",
 	}
 
 	const menuChildrenStyles: CSSProperties = {

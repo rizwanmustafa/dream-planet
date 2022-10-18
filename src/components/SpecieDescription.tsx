@@ -20,7 +20,7 @@ const SpecieDescription = (props: Props): JSX.Element => {
 			width: props.tabletMode ? "unset" : "75%",
 			alignSelf: "center",
 			alignItems: "center",
-			
+			boxShadow: "0px 0px 9px 3px rgba(41,41,41,.25)",
 			outline: "2px solid #9c27b0"
 		}} {...{ "data-aos-once": "true", "data-aos": "zoom-in" }}>
 			<div style={{ width: props.tabletMode ? "unset" : "70%", padding: 20 }}>
