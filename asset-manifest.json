@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/dream-planet/static/css/main.4969b92f.chunk.css",
-    "main.js": "/dream-planet/static/js/main.72857f5f.chunk.js",
-    "main.js.map": "/dream-planet/static/js/main.72857f5f.chunk.js.map",
+    "main.js": "/dream-planet/static/js/main.dfa215ed.chunk.js",
+    "main.js.map": "/dream-planet/static/js/main.dfa215ed.chunk.js.map",
     "runtime-main.js": "/dream-planet/static/js/runtime-main.a5afa9d9.js",
     "runtime-main.js.map": "/dream-planet/static/js/runtime-main.a5afa9d9.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/dream-planet/static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.f9c699b6.chunk.js": "/dream-planet/static/js/2.f9c699b6.chunk.js",
-    "static/js/2.f9c699b6.chunk.js.map": "/dream-planet/static/js/2.f9c699b6.chunk.js.map",
+    "static/js/2.78e9abf9.chunk.js": "/dream-planet/static/js/2.78e9abf9.chunk.js",
+    "static/js/2.78e9abf9.chunk.js.map": "/dream-planet/static/js/2.78e9abf9.chunk.js.map",
     "index.html": "/dream-planet/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/dream-planet/static/css/2.7fc9bc2b.chunk.css.map",
     "static/css/main.4969b92f.chunk.css.map": "/dream-planet/static/css/main.4969b92f.chunk.css.map",
-    "static/js/2.f9c699b6.chunk.js.LICENSE.txt": "/dream-planet/static/js/2.f9c699b6.chunk.js.LICENSE.txt",
+    "static/js/2.78e9abf9.chunk.js.LICENSE.txt": "/dream-planet/static/js/2.78e9abf9.chunk.js.LICENSE.txt",
     "static/media/Fall.15039eb0.png": "/dream-planet/static/media/Fall.15039eb0.png",
     "static/media/about-us-bg.8dfc2bc7.jpeg": "/dream-planet/static/media/about-us-bg.8dfc2bc7.jpeg",
     "static/media/bonsar-tree.44f70709.png": "/dream-planet/static/media/bonsar-tree.44f70709.png",
@@ -34,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.a5afa9d9.js",
     "static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.f9c699b6.chunk.js",
+    "static/js/2.78e9abf9.chunk.js",
     "static/css/main.4969b92f.chunk.css",
-    "static/js/main.72857f5f.chunk.js"
+    "static/js/main.dfa215ed.chunk.js"
   ]
 }
