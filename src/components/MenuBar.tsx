@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logoImg from "../images/logo.png";
 
 // Icons
+import Hamburger from "hamburger-react";
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 
@@ -90,29 +91,9 @@ const MenuBar = (): JSX.Element => {
 				/>
 			</Link>
 			{
-				// Show cross icon if we are showing menu, else show hamburger menu
-				showMenu ?
-					<CloseIcon
-						id="menuIcon"
-						style={{
-							color: "white",
-							fontSize: 40,
-							cursor: "pointer",
-							paddingRight: 20,
-						}}
-						onClick={() => setShowMenu(!showMenu)}
-					/>
-					:
-					<MenuIcon
-						id="menuIcon"
-						style={{
-							color: "white",
-							fontSize: 40,
-							cursor: "pointer",
-							paddingRight: 20,
-						}}
-						onClick={() => setShowMenu(!showMenu)}
-					/>
+				<span id="menuIcon" style={{ paddingRight: 15 }}>
+					<Hamburger toggled={showMenu} toggle={setShowMenu} color="white" direction="right"/>
+				</span>
 			}
 			<div style={menuStyles} id="menu">
 				<Link to="/" style={menuChildrenStyles}>Home</Link>
